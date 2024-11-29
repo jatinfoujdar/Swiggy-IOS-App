@@ -15,3 +15,4 @@ struct Constants {
     static let menuType = "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
 }
 
+

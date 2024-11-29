@@ -2,6 +2,7 @@ import SwiftUI
 
 struct LandingView: View {
     @State private var moveImage = false
+    @State private var floatEffect = false
 
     var body: some View {
         ZStack {
@@ -20,51 +21,59 @@ struct LandingView: View {
         
             Image("food1")
                 .resizable()
-                .frame(width: 150, height: 100)
-                .offset(x: 150, y: moveImage ? 10 : UIScreen.main.bounds.height)
+                .frame(width: 140, height: 90)
+                .offset(x: 149, y: moveImage ? 10 : UIScreen.main.bounds.height)
                 .animation(.easeInOut(duration: 2), value: moveImage)
-
+                .offset(y: floatEffect ? -5 : 5)
+                    .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true), value: floatEffect)
            
             Image("SeekPng")
                 .resizable()
                 .frame(width: 150, height: 100)
-                .offset(x: 140, y: moveImage ? -120 : UIScreen.main.bounds.height)
+                .offset(x: 140, y: moveImage ? -110 : UIScreen.main.bounds.height)
                 .animation(.easeInOut(duration: 2), value: moveImage)
-            
+                .offset(y: floatEffect ? -5 : 5)
+                .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true), value: floatEffect)
           
             Image("food2")
                 .resizable()
                 .frame(width: 100, height: 100)
                 .offset(x: moveImage ? -160 : 100, y: moveImage ? 0 : UIScreen.main.bounds.height)
                 .animation(.easeInOut(duration: 2), value: moveImage)
-            
+                .offset(y: floatEffect ? -5 : 5)
+                .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true), value: floatEffect)
            
             Image("food3")
                 .resizable()
                 .frame(width: 100, height: 100)
                 .offset(x: moveImage ? -140 : 100, y: moveImage ? 170 : UIScreen.main.bounds.height)
                 .animation(.easeInOut(duration: 2), value: moveImage)
-            
+                .offset(y: floatEffect ? -5 : 5)
+                .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true), value: floatEffect)
            
             Image("food5")
                 .resizable()
                 .frame(width: 100, height: 100)
                 .offset(x: moveImage ? 2 : 100, y: moveImage ? 210 : UIScreen.main.bounds.height)
                 .animation(.easeInOut(duration: 2), value: moveImage)
-            
+                .offset(y: floatEffect ? -5 : 5)
+                .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true), value: floatEffect)
            
             Image("food4")
                 .resizable()
                 .frame(width: 100, height: 100)
                 .offset(x: moveImage ? 150 : 100, y: moveImage ? 150 : UIScreen.main.bounds.height)
                 .animation(.easeInOut(duration: 2), value: moveImage)
-            
+                .offset(y: floatEffect ? -5 : 5)
+                .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true), value: floatEffect)
           
             Image("food6")
                 .resizable()
                 .frame(width: 150, height: 100)
                 .offset(x: -150, y: moveImage ? -80 : UIScreen.main.bounds.height)
                 .animation(.easeInOut(duration: 2), value: moveImage)
+                .offset(y: floatEffect ? -5 : 5)
+                .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true), value: floatEffect)
             
             
             VStack {
@@ -74,20 +83,29 @@ struct LandingView: View {
                 }) {
                 Text("Get Started")
                 .font(.title3)
-                .fontWeight(.regular)
+                .fontWeight(.bold)
                 .foregroundColor(.white)
                 .padding()
                 .background(Color.orange)
                 .cornerRadius(10)
+                    
                 }
                 .padding(.bottom, 20)
             }
         }
         .onAppear {
-            moveImage.toggle()
-        }
-    }
-}
+                 // Start the movement animation first
+                 withAnimation(.easeInOut(duration: 2)) {
+                     moveImage.toggle()
+                 }
+                 // Start the floating effect after a delay
+                 DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                     // Delay floating effect until the movement animation completes
+                     floatEffect.toggle()
+                 }
+             }
+         }
+     }
 
 #Preview {
     LandingView()

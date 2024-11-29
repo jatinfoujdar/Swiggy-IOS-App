@@ -1,5 +1,6 @@
 import Foundation
 
+
 struct Restaurant: Identifiable, Codable {
     let id: String
     let name: String
@@ -15,6 +16,7 @@ struct Restaurant: Identifiable, Codable {
     let lastMileTravelString: String
     let isOpen: Bool
 }
+
 
 struct RestaurantResponse: Codable {
     let statusCode: Int

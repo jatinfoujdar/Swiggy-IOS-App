@@ -11,7 +11,7 @@ struct LandingView: View {
 
             Image("logo")
             .resizable()
-            .frame(width: 150, height: 50)
+            .frame(width: 250, height: 100)
             .offset(y: -UIScreen.main.bounds.height / 2.5)
        
             Image("hero-img")

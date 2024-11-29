@@ -94,13 +94,13 @@ struct LandingView: View {
             }
         }
         .onAppear {
-                 // Start the movement animation first
+                 
                  withAnimation(.easeInOut(duration: 2)) {
                      moveImage.toggle()
                  }
-                 // Start the floating effect after a delay
+                
                  DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                     // Delay floating effect until the movement animation completes
+                    
                      floatEffect.toggle()
                  }
              }

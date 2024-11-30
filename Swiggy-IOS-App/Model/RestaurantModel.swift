@@ -15,6 +15,7 @@ struct Restaurant: Identifiable, Codable {
     let slaString: String
     let lastMileTravelString: String
     let isOpen: Bool
+    let cloudinaryImageId: String
 }
 
 

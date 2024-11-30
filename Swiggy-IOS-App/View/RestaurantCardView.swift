@@ -1,11 +1,9 @@
 import SwiftUI
 
 struct RestaurantCardView: View {
-    @State private var onHover = false
     
     var body: some View {
         VStack(alignment: .leading) {
-          
             AsyncImage(url: URL(string: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e0839ff574213e6f35b3899ebf1fc597")) { image in
                 image
                     .resizable()
@@ -40,15 +38,7 @@ struct RestaurantCardView: View {
         .background(Color.white)
         .cornerRadius(16)
         .shadow(radius: 10)
-        .overlay(
-          
-            RoundedRectangle(cornerRadius: 16)
-                .stroke(onHover ? Color.blue : Color.clear, lineWidth: 2)
-        )
-        .onHover { hovering in
-            onHover = hovering
-        }
-        .animation(.easeInOut(duration: 0.2), value: onHover)
+        
     }
 }
 

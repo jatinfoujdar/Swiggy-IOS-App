@@ -27,3 +27,4 @@ struct RestaurantResponse: Codable {
 struct RestaurantData: Codable {
     let restaurants: [Restaurant]
 }
+

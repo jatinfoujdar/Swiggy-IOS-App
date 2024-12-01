@@ -11,7 +11,7 @@ struct LandingView: View {
 
             Image("logo")
             .resizable()
-            .frame(width: 250, height: 100)
+            .frame(width: 200, height: 100)
             .offset(y: -UIScreen.main.bounds.height / 2.5)
        
             Image("hero-img")
@@ -83,7 +83,7 @@ struct LandingView: View {
                 }) {
                 Text("Get Started")
                 .font(.title3)
-                .fontWeight(.bold)
+                .fontWeight(.regular)
                 .foregroundColor(.white)
                 .padding()
                 .background(Color.orange)

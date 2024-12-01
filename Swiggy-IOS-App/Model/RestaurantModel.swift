@@ -1,7 +1,6 @@
 import Foundation
 
-
-struct Restaurant: Identifiable, Codable {
+struct Restaurant: Codable, Identifiable {
     let id: String
     let name: String
     let locality: String
@@ -9,23 +8,20 @@ struct Restaurant: Identifiable, Codable {
     let costForTwo: String
     let cuisines: [String]
     let avgRating: Double
-    let totalRatingsString: String
     let deliveryTime: Int
-    let lastMileTravel: Double
-    let slaString: String
     let lastMileTravelString: String
-    let isOpen: Bool
     let cloudinaryImageId: String
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case locality
+        case areaName
+        case costForTwo
+        case cuisines
+        case avgRating
+        case deliveryTime
+        case lastMileTravelString
+        case cloudinaryImageId
+    }
 }
-
-
-struct RestaurantResponse: Codable {
-    let statusCode: Int
-    let statusMessage: String
-    let data: RestaurantData
-}
-
-struct RestaurantData: Codable {
-    let restaurants: [Restaurant]
-}
-

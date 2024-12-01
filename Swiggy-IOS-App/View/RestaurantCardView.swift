@@ -42,7 +42,7 @@ struct RestaurantCardView: View {
             }
             .padding(.top, 8)
         }
-        .padding() 
+        .padding()
         .background(Color.white)
         .cornerRadius(16)
         .shadow(radius: 10)
@@ -50,5 +50,5 @@ struct RestaurantCardView: View {
 }
 
 #Preview {
-    RestaurantCardView(restaurant: Restaurant(id: "1", name: "Patna Biryani Club", locality: "Patna", areaName: "Sri Krishnapuri", costForTwo: "₹350 for two", cuisines: ["Pizza", "Italian"], avgRating: 4.3, totalRatingsString: "5.0K+", deliveryTime: 30, lastMileTravel: 5.0, slaString: "30-35 min", lastMileTravelString: "5 km", isOpen: true, cloudinaryImageId: "oamsqzmmt2xt2eaqqt2p"))
+    RestaurantCardView(restaurant: Restaurant(id: "1", name: "Patna Biryani Club", locality: "Patna", areaName: "Sri Krishnapuri", costForTwo: "₹350 for two", cuisines: ["Pizza", "Italian"], avgRating: 4.3,  deliveryTime: 30,   lastMileTravelString: "5 km",  cloudinaryImageId: "oamsqzmmt2xt2eaqqt2p"))
 }

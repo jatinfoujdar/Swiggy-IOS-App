@@ -25,10 +25,14 @@ struct RestaurantCardView: View {
                     .font(.title2)
                     .fontWeight(.bold)
                     .foregroundColor(.primary)
+                    .lineLimit(1)
+                    .truncationMode(.tail)
                 
-                Text(restaurant.cuisines.joined(separator: ", "))
+                Text(restaurant.cuisines.prefix(2).joined(separator: ", "))
                     .font(.subheadline)
                     .foregroundColor(.secondary)
+                    .lineLimit(1)
+                    .truncationMode(.tail)  
                 
                 Text("\(restaurant.avgRating, specifier: "%.1f") Stars")
                     .font(.subheadline)
@@ -41,14 +45,17 @@ struct RestaurantCardView: View {
                 
             }
             .padding(.top, 8)
+            Spacer()
+            Image(systemName: "star")
         }
         .padding()
         .background(Color.white)
         .cornerRadius(16)
         .shadow(radius: 10)
+        .frame(maxWidth: .infinity)
     }
 }
 
 #Preview {
-    RestaurantCardView(restaurant: Restaurant(id: "1", name: "Patna Biryani Club", locality: "Patna", areaName: "Sri Krishnapuri", costForTwo: "₹350 for two", cuisines: ["Pizza", "Italian"], avgRating: 4.3,  deliveryTime: 30,   lastMileTravelString: "5 km",  cloudinaryImageId: "oamsqzmmt2xt2eaqqt2p"))
+    RestaurantCardView(restaurant: restaurants[0])
 }

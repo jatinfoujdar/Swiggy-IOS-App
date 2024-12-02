@@ -4,7 +4,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("gg")
+        List(restaurants) { restaurant in
+            LandmarkRow(restaurant: restaurant)
+        }
     }
 }
 

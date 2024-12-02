@@ -2,7 +2,7 @@ import Foundation
 
 
 
-var restaurants: [Restaurant] = load("JsonData.json")
+var restaurants: [Restaurant] = load("Sample.json")
 
 
 

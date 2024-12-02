@@ -1,0 +1,266 @@
+[
+    {
+        "id": "449025",
+        "name": "Pizza Hut",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/7/17/3f149a2a-468e-4e17-82db-a5d83d7c8651_449025.jpg",
+        "locality": "Patna Sadar",
+        "areaName": "Sri Krishnapuri",
+        "costForTwo": "₹350 for two",
+        "cuisines": ["Pizzas"],
+        "avgRating": 4.3,
+        "deliveryTime": 23,
+        "lastMileTravelString": "0.4 km"
+    },
+    {
+        "id": "654087",
+        "name": "Burger King",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/11/60497022-434e-4d21-bc0e-813fea770ae5_654087.JPG",
+        "locality": "SP Verma Road",
+        "areaName": "Lodipur",
+        "costForTwo": "₹350 for two",
+        "cuisines": ["Burgers", "American"],
+        "avgRating": 4.2,
+        "deliveryTime": 32,
+        "lastMileTravelString": "3.0 km"
+    },
+        {
+            "id": "81234",
+            "name": "KFC",
+            "locality": "Kidwaipuri",
+            "areaName": "Kidwaipuri",
+            "costForTwo": "₹450 for two",
+            "cuisines": ["Burgers", "Fast Food", "Rolls & Wraps"],
+            "avgRating": 4.4,
+            "deliveryTime": 23,
+            "lastMileTravelString": "2.1 km",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/5/3751dbec-ab80-4474-8e69-a59893077432_81234.JPG"
+        },
+        {
+            "id": "84844",
+            "name": "Domino's Pizza",
+            "locality": "Boring Road",
+            "areaName": "Sri Krishnapuri",
+            "costForTwo": "₹400 for two",
+            "cuisines": ["Pizzas", "Italian", "Pastas", "Desserts"],
+            "avgRating": 4.3,
+            "deliveryTime": 25,
+            "lastMileTravelString": "0.8 km",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/29/68c6da50-4997-4332-99e9-f0b8bc87a4dc_84844.jpg"
+        },
+        {
+            "id": "679788",
+            "name": "The Belgian Waffle Co.",
+            "locality": "S.K.Puri",
+            "areaName": "Sahdeo Mahto Marg",
+            "costForTwo": "₹200 for two",
+            "cuisines": ["Waffle", "Desserts", "Ice Cream", "Beverages"],
+            "avgRating": 4.7,
+            "deliveryTime": 16,
+            "lastMileTravelString": "0.4 km",
+            "cloudinaryImageId": "5116a385bac0548e06c33c08350fbf11"
+        },
+        {
+            "id": "107872",
+            "name": "Baskin Robbins - Ice Cream Desserts",
+            "locality": "One Mall",
+            "areaName": "Srikrishnapuri",
+            "costForTwo": "₹150 for two",
+            "cuisines": ["Desserts", "Ice Cream"],
+            "avgRating": 4.5,
+            "deliveryTime": 19,
+            "lastMileTravelString": "1.3 km",
+            "cloudinaryImageId": "85ccae4e3576f9330af102c46ca85395"
+        },
+        {
+            "id": "691411",
+            "name": "The Chocolate Room",
+            "locality": "Ashiyana Digha Road",
+            "areaName": "Khajpura",
+            "costForTwo": "₹200 for two",
+            "cuisines": ["Italian", "Indian", "Beverages", "Bakery", "Waffle", "Fast Food", "Mexican", "Pizzas", "Burgers", "Pastas"],
+            "avgRating": 4.3,
+            "deliveryTime": 39,
+            "lastMileTravelString": "4.8 km",
+            "cloudinaryImageId": "964b7c3f3058de9d09ee16d99c8c9a37"
+        },
+        {
+                "id": "591316",
+                "name": "Dum Safar Biryani",
+                "cloudinaryImageId": "mx8rsghjmgkry6untloe",
+                "locality": "Patna One Mall",
+                "areaName": "Fraser Road",
+                "costForTwo": "₹500 for two",
+                "cuisines": [
+                    "Biryani",
+                    "Kebabs",
+                    "Tandoor",
+                    "Indian",
+                    "Desserts"
+                ],
+                "avgRating": 4.4,
+                "deliveryTime": 34,
+                "lastMileTravelString": "3.0 km"
+            },
+            {
+                "id": "251514",
+                "name": "Bikaner Elite",
+                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/9/2/836ea5dc-dcd6-4c6c-b42c-834316616352_251514.jpg",
+                "locality": "Sri Krishna Puri",
+                "areaName": "Sri Krishnapuri",
+                "costForTwo": "₹500 for two",
+                "cuisines": [
+                    "Sweets",
+                    "Bakery",
+                    "veg restaurant"
+                ],
+                "avgRating": 4.6,
+                "deliveryTime": 18,
+                "lastMileTravelString": "0.5 km"
+            },
+            {
+                "id": "245871",
+                "name": "Harilal's",
+                "cloudinaryImageId": "wfhxenn1mr5h55frhdzf",
+                "locality": "Children Park",
+                "areaName": "Sri Krishna Puri Park",
+                "costForTwo": "₹350 for two",
+                "cuisines": [
+                    "Sweets",
+                    "Bakery",
+                    "North Indian"
+                ],
+                "avgRating": 4.5,
+                "deliveryTime": 20,
+                "lastMileTravelString": "0.4 km"
+            },
+            {
+                "id": "441343",
+                "name": "La Pino'z Pizza",
+                "cloudinaryImageId": "rfgsm05nlfo6rpclhpyn",
+                "locality": "Paras Lok Complex",
+                "areaName": "Sri Krishnapuri",
+                "costForTwo": "₹300 for two",
+                "cuisines": [
+                    "Pizzas",
+                    "Pastas",
+                    "Italian",
+                    "Desserts",
+                    "Beverages"
+                ],
+                "avgRating": 4.3,
+                "deliveryTime": 19,
+                "lastMileTravelString": "1.1 km"
+            },
+            {
+                "id": "516263",
+                "name": "Patna Biryani Club",
+                "cloudinaryImageId": "oamsqzmmt2xt2eaqqt2p",
+                "locality": "Aiims Park",
+                "areaName": "Sri Krishnapuri",
+                "costForTwo": "₹350 for two",
+                "cuisines": [
+                    "Biryani",
+                    "briyani"
+                ],
+                "avgRating": 4.3,
+                "deliveryTime": 20,
+                "lastMileTravelString": "1.1 km"
+            },
+            {
+                   "id": "229028",
+                   "name": "Afra Tafri",
+                   "locality": "Boring Canal Road",
+                   "areaName": "Kidwaipuri",
+                   "costForTwo": "₹400 for two",
+                   "cuisines": [
+                       "Biryani",
+                       "North Indian",
+                       "Chinese"
+                   ],
+                   "avgRating": 4.0,
+                   "deliveryTime": 20,
+                   "lastMileTravelString": "1.4 km",
+                   "cloudinaryImageId": "c0e80797374623559627e481286784fb"
+               },
+               {
+                   "id": "88375",
+                   "name": "The Biryani Mall",
+                   "locality": "Boring Canal Road",
+                   "areaName": "Sri Krishnapuri",
+                   "costForTwo": "₹500 for two",
+                   "cuisines": [
+                       "Biryani",
+                       "North Indian",
+                       "Mughlai"
+                   ],
+                   "avgRating": 4.3,
+                   "deliveryTime": 18,
+                   "lastMileTravelString": "0.8 km",
+                   "cloudinaryImageId": "pxt1apvbivakupt7jqna"
+               },
+               {
+                   "id": "515587",
+                   "name": "Biryani Nawab",
+                   "locality": "Boring Road",
+                   "areaName": "Anandpuri",
+                   "costForTwo": "₹350 for two",
+                   "cuisines": [
+                       "Biryani",
+                       "Lucknowi",
+                       "Briyani"
+                   ],
+                   "avgRating": 4.4,
+                   "deliveryTime": 19,
+                   "lastMileTravelString": "1.1 km",
+                   "cloudinaryImageId": "xofwciq1dvl4rfnz9lyl"
+               },
+               {
+                       "id": "358125",
+                       "name": "Matkawala",
+                       "locality": "Shiv puri",
+                       "areaName": "Patliputra Colony",
+                       "costForTwo": "₹250 for two",
+                       "cuisines": [
+                           "Bihari",
+                           "North Indian",
+                           "Biryani",
+                           "Beverages",
+                           "Thalis"
+                       ],
+                       "avgRating": 4.2,
+                       "deliveryTime": 26,
+                       "lastMileTravelString": "1.5 km",
+                       "cloudinaryImageId": "lrpfop5j19q4sbatjjth"
+                   },
+                   {
+                       "id": "87401",
+                       "name": "Amrapali Cafe",
+                       "locality": "Beer Chand Patel Marg",
+                       "areaName": "Fraser Road",
+                       "costForTwo": "₹700 for two",
+                       "cuisines": [
+                           "North Indian",
+                           "Chinese"
+                       ],
+                       "avgRating": 4.4,
+                       "deliveryTime": 36,
+                       "lastMileTravelString": "2.5 km",
+                       "cloudinaryImageId": "xuzh778frvo2c8oi81d2"
+                   },
+                   {
+                       "id": "230250",
+                       "name": "Pour Tous",
+                       "locality": "Patliputra Colony",
+                       "areaName": "Patliputra Colony",
+                       "costForTwo": "₹550 for two",
+                       "cuisines": [
+                           "North Indian",
+                           "Biryani",
+                           "Chinese"
+                       ],
+                       "avgRating": 4.4,
+                       "deliveryTime": 26,
+                       "lastMileTravelString": "2.5 km",
+                       "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/10/25/d14b2e69-6a81-472e-82e3-a274b2b53f36_230250.jpg"
+                   }
+]

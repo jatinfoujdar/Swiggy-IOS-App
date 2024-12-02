@@ -81,13 +81,14 @@ struct LandingView: View {
                 Button(action: {
                 print("Button tapped")
                 }) {
-                Text("Get Started")
+                Text("Start ordering")
                 .font(.title3)
                 .fontWeight(.regular)
-                .foregroundColor(.white)
+                .foregroundColor(.black)
                 .padding()
+                .padding(.horizontal,100)
                 .background(Color.orange)
-                .cornerRadius(10)
+                .cornerRadius(30)
                     
                 }
                 .padding(.bottom, 20)

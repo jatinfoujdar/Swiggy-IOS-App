@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct LandmarkRow: View {
+struct RestaurantListView: View {
 
     var restaurants: [Restaurant]  
 
@@ -18,5 +18,5 @@ struct LandmarkRow: View {
 }
 
 #Preview {
-    LandmarkRow(restaurants: restaurants)
+    RestaurantListView(restaurants: restaurants)
 }

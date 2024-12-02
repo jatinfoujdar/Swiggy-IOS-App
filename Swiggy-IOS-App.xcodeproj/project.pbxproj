@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		596E1B242CFDB1BB00FB955D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 596E1B232CFDB1BB00FB955D /* Lottie */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		59EEE83C2CF8CB7C000C798E /* Swiggy-IOS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swiggy-IOS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				596E1B242CFDB1BB00FB955D /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "Swiggy-IOS-App";
 			packageProductDependencies = (
+				596E1B232CFDB1BB00FB955D /* Lottie */,
 			);
 			productName = "Swiggy-IOS-App";
 			productReference = 59EEE83C2CF8CB7C000C798E /* Swiggy-IOS-App.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 59EEE8332CF8CB7C000C798E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				596E1B222CFDB1BB00FB955D /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 59EEE83D2CF8CB7C000C798E /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		596E1B222CFDB1BB00FB955D /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		596E1B232CFDB1BB00FB955D /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 596E1B222CFDB1BB00FB955D /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 59EEE8342CF8CB7C000C798E /* Project object */;
 }

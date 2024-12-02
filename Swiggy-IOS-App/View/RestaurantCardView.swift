@@ -22,7 +22,7 @@ struct RestaurantCardView: View {
             
             VStack(alignment: .leading, spacing: 8) {
                 Text(restaurant.name)
-                    .font(.title2)
+                    .font(.title3)
                     .fontWeight(.bold)
                     .foregroundColor(.primary)
                     .lineLimit(1)

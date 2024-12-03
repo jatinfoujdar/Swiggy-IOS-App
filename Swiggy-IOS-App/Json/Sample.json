@@ -1,4 +1,5 @@
-[
+{
+"restaurant"[
     {
         "id": "449025",
         "name": "Pizza Hut",
@@ -263,110 +264,109 @@
         "lastMileTravelString": "2.5 km",
         "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/10/25/d14b2e69-6a81-472e-82e3-a274b2b53f36_230250.jpg"
     }
+],
+
+
+"banners": [
+  {
+    "id": "750591",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png",
+    "text": "Biryani"
+  },
+  {
+    "id": "750579",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Pizzas.png",
+    "text": "Pizzas"
+  },
+  {
+    "id": "750581",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_North Indian.png",
+    "text": "North Indian"
+  },
+  {
+    "id": "750589",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_burger.png",
+    "text": "Burgers"
+  },
+  {
+    "id": "750222",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/17/58760e8e-324f-479e-88fa-31800120ea38_Rolls1.png",
+    "text": "Rolls"
+  },
+  {
+    "id": "750587",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Chinese.png",
+    "text": "Chinese"
+  },
+  {
+    "id": "750131",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Dosa.png",
+    "text": "Dosa"
+  },
+  {
+    "id": "749876",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_chole bhature.png",
+    "text": "Chole Bhature"
+  },
+  {
+    "id": "750216",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Pav Bhaji.png",
+    "text": "Pav Bhaji"
+  },
+  {
+    "id": "749772",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Noodles.png",
+    "text": "Noodles"
+  },
+  {
+    "id": "745861",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Shake.png",
+    "text": "Shake"
+  },
+  {
+    "id": "750208",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/f1263395-5d4a-4775-95dc-80ab6f3bbd89_pastry.png",
+    "text": "Pastry"
+  },
+  {
+    "id": "750643",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Idli.png",
+    "text": "Idli"
+  },
+  {
+    "id": "750206",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/f1263395-5d4a-4775-95dc-80ab6f3bbd89_pasta.png",
+    "text": "Pasta"
+  },
+  {
+    "id": "750201",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Paratha.png",
+    "text": "Paratha"
+  },
+  {
+    "id": "750571",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Pure Veg.png",
+    "text": "Pure Veg"
+  },
+  {
+    "id": "750260",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Rasmalai.png",
+    "text": "Rasmalai"
+  },
+  {
+    "id": "750596",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_chocolate icecream.png",
+    "text": "Ice Cream"
+  },
+  {
+    "id": "750248",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/f1263395-5d4a-4775-95dc-80ab6f3bbd89_shawarma.png",
+    "text": "Shawarma"
+  },
+  {
+    "id": "750256",
+    "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Rasgulla.png",
+    "text": "Rasgulla"
+  }
 ]
-
-
-
-
- [
-   {
-     "id": "750591",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png",
-     "text": "Biryani"
-   },
-   {
-     "id": "750579",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Pizzas.png",
-     "text": "Pizzas"
-   },
-   {
-     "id": "750581",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_North Indian.png",
-     "text": "North Indian"
-   },
-   {
-     "id": "750589",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_burger.png",
-     "text": "Burgers"
-   },
-   {
-     "id": "750222",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/17/58760e8e-324f-479e-88fa-31800120ea38_Rolls1.png",
-     "text": "Rolls"
-   },
-   {
-     "id": "750587",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Chinese.png",
-     "text": "Chinese"
-   },
-   {
-     "id": "750131",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Dosa.png",
-     "text": "Dosa"
-   },
-   {
-     "id": "749876",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_chole bhature.png",
-     "text": "Chole Bhature"
-   },
-   {
-     "id": "750216",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Pav Bhaji.png",
-     "text": "Pav Bhaji"
-   },
-   {
-     "id": "749772",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Noodles.png",
-     "text": "Noodles"
-   },
-   {
-     "id": "745861",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Shake.png",
-     "text": "Shake"
-   },
-   {
-     "id": "750208",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/f1263395-5d4a-4775-95dc-80ab6f3bbd89_pastry.png",
-     "text": "Pastry"
-   },
-   {
-     "id": "750643",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Idli.png",
-     "text": "Idli"
-   },
-   {
-     "id": "750206",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/f1263395-5d4a-4775-95dc-80ab6f3bbd89_pasta.png",
-     "text": "Pasta"
-   },
-   {
-     "id": "750201",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Paratha.png",
-     "text": "Paratha"
-   },
-   {
-     "id": "750571",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Pure Veg.png",
-     "text": "Pure Veg"
-   },
-   {
-     "id": "750260",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Rasmalai.png",
-     "text": "Rasmalai"
-   },
-   {
-     "id": "750596",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_chocolate icecream.png",
-     "text": "Ice Cream"
-   },
-   {
-     "id": "750248",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/f1263395-5d4a-4775-95dc-80ab6f3bbd89_shawarma.png",
-     "text": "Shawarma"
-   },
-   {
-     "id": "750256",
-     "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Rasgulla.png",
-     "text": "Rasgulla"
-   }
- ]
+}

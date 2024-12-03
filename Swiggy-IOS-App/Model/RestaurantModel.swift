@@ -1,5 +1,10 @@
 import Foundation
 
+struct RootData: Codable {
+    let restaurants: [Restaurant]
+    let banners: [Banner]
+}
+
 struct Restaurant: Codable, Identifiable {
     let id: String
     let name: String
@@ -11,24 +16,10 @@ struct Restaurant: Codable, Identifiable {
     let deliveryTime: Int
     let lastMileTravelString: String
     let cloudinaryImageId: String
-    
-        enum CodingKeys: String, CodingKey {
-        case id
-        case name
-        case locality
-        case areaName
-        case costForTwo
-        case cuisines
-        case avgRating
-        case deliveryTime
-        case lastMileTravelString
-        case cloudinaryImageId
-    }
 }
 
-
-struct Banner: Codable, Identifiable{
-        let id : String
-        let imageId : String
-        let text : String
+struct Banner: Codable, Identifiable {
+    let id: String
+    let imageId: String
+    let text: String
 }

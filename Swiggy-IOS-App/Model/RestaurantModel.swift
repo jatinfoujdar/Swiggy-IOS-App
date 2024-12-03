@@ -11,8 +11,8 @@ struct Restaurant: Codable, Identifiable {
     let deliveryTime: Int
     let lastMileTravelString: String
     let cloudinaryImageId: String
-
-    enum CodingKeys: String, CodingKey {
+    
+        enum CodingKeys: String, CodingKey {
         case id
         case name
         case locality
@@ -24,4 +24,11 @@ struct Restaurant: Codable, Identifiable {
         case lastMileTravelString
         case cloudinaryImageId
     }
+}
+
+
+struct Banner: Codable, Identifiable{
+        let id : String
+        let imageId : String
+        let text : String
 }

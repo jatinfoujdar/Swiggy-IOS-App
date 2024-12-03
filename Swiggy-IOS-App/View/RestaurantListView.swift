@@ -6,6 +6,7 @@ struct RestaurantListView: View {
 
     var body: some View {
         ScrollView {
+            HeaderView()
             VStack(spacing: 10) {
                 ForEach(restaurants, id: \.id) { restaurant in
                 

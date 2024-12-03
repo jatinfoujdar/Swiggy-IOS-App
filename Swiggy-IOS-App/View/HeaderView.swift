@@ -40,7 +40,8 @@ struct HeaderView: View {
             .padding(.horizontal)
             
         }
-        RestaurantListView(restaurants: restaurants)
+       
+        .cornerRadius(10)
     }
 }
 

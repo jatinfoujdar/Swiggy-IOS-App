@@ -14,7 +14,7 @@ struct NavbarView: View {
         HStack {
             ForEach(iconNames, id: \.0) { icon in
                 VStack {
-                    // Icon
+                   
                     if icon.0.contains("icons8-rocket-64") {
                         Image(icon.0)
                             .resizable()

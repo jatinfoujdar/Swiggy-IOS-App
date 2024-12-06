@@ -5,8 +5,10 @@ struct RestaurantListView: View {
     var restaurants: [Restaurant]  
 
     var body: some View {
+        HeaderView()
         ScrollView {
-            HeaderView()
+            CardCrousal()
+            
             VStack(spacing: 10) {
                 ForEach(restaurants, id: \.id) { restaurant in
                 
@@ -14,7 +16,9 @@ struct RestaurantListView: View {
                 }
             }
             .padding()
+            
         }
+        NavbarView()
     }
 }
 

@@ -6,13 +6,13 @@ struct LandingView: View {
 
     var body: some View {
         ZStack {
-            Color.black
+            Color.red
                 .edgesIgnoringSafeArea(.all)
 
-            Image("logo")
+            Image("logo1")
             .resizable()
-            .frame(width: 200, height: 100)
-            .offset(y: -UIScreen.main.bounds.height / 2.5)
+            .frame(width: 300, height: 100)
+            .offset(y: -UIScreen.main.bounds.height / 2.8)
        
             Image("hero-img")
                 .resizable()

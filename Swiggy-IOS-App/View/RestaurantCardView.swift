@@ -46,7 +46,7 @@ struct RestaurantCardView: View {
             }
             .padding(.top, 8)
             Spacer()
-            Image(systemName: "star")
+            Image(systemName: "heart")
         }
         .padding()
         .background(Color.white)

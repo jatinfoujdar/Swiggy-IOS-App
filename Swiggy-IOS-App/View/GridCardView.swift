@@ -60,20 +60,22 @@ struct GridCardView: View {
     ]
     
     var body: some View {
-        VStack(alignment: .leading) {
-                  Text("Top Pick For You")
-                      .font(.headline)
-                      .padding(.horizontal)
-            Divider()
-                .frame(height: 1)
-                .background(Color.black)
-                .padding(.horizontal)
+          VStack(alignment: .leading) {
+              HStack {
+                Text("Top Pick For You ─────")
+                .font(.headline)
+              
+        }
+        .padding(.horizontal)
+                
             ButtonView()
+                
             LazyVGrid(columns: columns, spacing: 0) {
                 ForEach(restaurants.prefix(6), id: \.id) { restaurant in
                     GridCard(restaurant: restaurant)
                 }
             }
+            .padding()
         }
     }
 }

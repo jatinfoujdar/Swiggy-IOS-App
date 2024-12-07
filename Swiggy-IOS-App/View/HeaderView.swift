@@ -4,25 +4,29 @@ import Lottie
 struct HeaderView: View {
     var body: some View {
         VStack {
-            
-            HStack {
-                Image(systemName: "location.fill")
-                    .font(.system(size: 20))
-                    .foregroundColor(.black)
-                Text("Delhi, North")
-                    .font(.headline)
-                    .foregroundColor(.black)
-                Spacer()
-                Image("hero-img2")
-                    .resizable()
-                    .frame(width: 50,height: 50)
-                    .font(.system(size: 25))
-                    .foregroundColor(.black)
+            VStack{
+                HStack {
+                    Image(systemName: "location.fill")
+                        .font(.system(size: 20))
+                        .foregroundColor(.orange)
+                    VStack{
+                        Text("Office⌄")
+                            .font(.headline)
+                            .foregroundColor(.black)
+                        Text("Block-D")
+                    }
+                    
+                    Spacer()
+                    Image("hero-img2")
+                        .resizable()
+                        .frame(width: 50,height: 50)
+                        .font(.system(size: 25))
+                        .foregroundColor(.black)
+                }
+               
+                .padding(.horizontal)
+               
             }
-            .padding(.top, 0)
-            .padding(.horizontal)
-            
-    
             HStack(spacing: 20) {
                 Text("Search")
                     .foregroundColor(.black)

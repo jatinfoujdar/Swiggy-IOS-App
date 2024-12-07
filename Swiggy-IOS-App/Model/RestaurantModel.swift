@@ -24,6 +24,9 @@ struct Restaurant: Codable, Identifiable {
         case lastMileTravelString
         case cloudinaryImageId
     }
+    
+  
+
 }
 
 

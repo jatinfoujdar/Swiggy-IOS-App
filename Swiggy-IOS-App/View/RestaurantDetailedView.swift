@@ -21,30 +21,108 @@ struct RestaurantDetailedView: View {
                 .edgesIgnoringSafeArea(.top)
             }
             
+            
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
                     Text(restaurant.name)
-                        .font(.title)
+                        .font(.largeTitle)
                         .fontWeight(.bold)
                     
-                    Text(restaurant.cuisines.joined(separator: ", "))
+                    Text("Agdamba Fuel Company, Vinayak Marg")
+                        .fontWeight(.semibold)
+                    
+                    Text("2 guest . 1 Bedroom . 1 bed . 1 bath")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
-                    
-                    Text("Rating: \(restaurant.avgRating, specifier: "%.1f")")
-                        .font(.subheadline)
-                        .foregroundColor(.green)
-                    
-                    Text("Cost for two: \(restaurant.costForTwo)")
-                        .font(.subheadline)
-                        .foregroundColor(.primary)
-                }
-                .padding()
+                        .padding()
+                    HStack(spacing: 16) {
+                                       VStack {
+                                           Text("4.96")
+                                               .font(.title3)
+                                               .fontWeight(.semibold)
+                                           Text("168 Reviews")
+                                               .font(.subheadline)
+                                               .foregroundColor(.gray)
+                                       }
+
+                                       Divider()
+
+                                       VStack {
+                                           Image(systemName: "leaf")
+                                               .font(.title3)
+                                               .foregroundColor(.green)
+                                           Text("Eco-friendly")
+                                               .font(.subheadline)
+                                               .foregroundColor(.gray)
+                                       }
+
+                                       Divider()
+
+                                       VStack {
+                                           Image(systemName: "star.fill")
+                                               .font(.title3)
+                                               .foregroundColor(.yellow)
+                                           Text("Top Rated")
+                                               .font(.subheadline)
+                                               .foregroundColor(.gray)
+                                       }
+                                   }
+                                   .padding(.horizontal)
+
+                                  
+                                   HStack(spacing: 16) {
+                                       Image("host")
+                                           .resizable()
+                                           .frame(width: 50, height: 50)
+                                           .clipShape(Circle())
+
+                                       VStack(alignment: .leading) {
+                                           Text("Hosted by Cito")
+                                               .font(.headline)
+
+                                           Text("Superhost · 8 years hosting")
+                                               .font(.subheadline)
+                                               .foregroundColor(.gray)
+                                       }
+                                   }
+                                   .padding(.horizontal)
+
+                                 
+                                   HStack {
+                                       VStack(alignment: .leading) {
+                                           Text("₹16,012")
+                                               .font(.subheadline)
+                                               .strikethrough()
+                                               .foregroundColor(.gray)
+
+                                           Text("₹14,410 / night")
+                                               .font(.title3)
+                                               .fontWeight(.bold)
+                                       }
+
+                                       Spacer()
+
+                                       Button(action: {
+                                           print("Reserve button tapped")
+                                       }) {
+                                           Text("Reserve")
+                                               .fontWeight(.bold)
+                                               .foregroundColor(.white)
+                                               .padding()
+                                               .frame(maxWidth: 150)
+                                               .background(Color.red)
+                                               .cornerRadius(8)
+                                       }
+                                   }
+                                   .padding(.horizontal)
+
+                                   Spacer()
+                          }
             }
         }
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
+
 #Preview {
     RestaurantDetailedView(restaurant: restaurants[0])
 }

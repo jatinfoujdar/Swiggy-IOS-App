@@ -4,6 +4,7 @@ struct RestaurantCardView: View {
     var restaurant: Restaurant
     
     var body: some View {
+       
         HStack(alignment: .top, spacing: 16) {
             if let imageUrl = URL(string: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/\(restaurant.cloudinaryImageId)") {
                 AsyncImage(url: imageUrl) { image in

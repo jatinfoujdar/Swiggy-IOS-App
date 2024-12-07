@@ -51,6 +51,7 @@ struct ButtonView: View {
 }
 
 struct GridCardView: View {
+    
     var restaurants: [Restaurant]
     
     let columns: [GridItem] = [
@@ -60,6 +61,7 @@ struct GridCardView: View {
     ]
     
     var body: some View {
+        
           VStack(alignment: .leading) {
               HStack {
                 Text("Top Pick For You ─────")

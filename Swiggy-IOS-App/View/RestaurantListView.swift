@@ -6,11 +6,12 @@ struct RestaurantListView: View {
     var body: some View {
         VStack {
             HeaderView()
-
-            ScrollView {
+                ScrollView {
+                
                 CardCrousal()
                 GridCardView(restaurants: restaurants)
-                
+                CardUIView()
+                StickyFilterView()
                 VStack(spacing: 10) {
                     ForEach(restaurants, id: \.id) { restaurant in
                         RestaurantCardView(restaurant: restaurant)

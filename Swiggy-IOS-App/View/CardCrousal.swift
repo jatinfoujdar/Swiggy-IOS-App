@@ -15,6 +15,7 @@ struct CardCrousal: View {
     ]
     
     var body: some View {
+        
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 10) {
                 ForEach(images) { image in

@@ -28,7 +28,7 @@ struct GridCard: View {
             Text(restaurant.name)
                 .font(.subheadline)
                 .fontWeight(.bold)
-                .lineLimit(1)
+                .lineLimit(2)
                 .truncationMode(.tail)
             HStack {
                 Image("star")

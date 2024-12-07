@@ -4,6 +4,7 @@ import SwiftUI
 
 struct ButtonView: View {
     var body: some View {
+        
         HStack(spacing: 10) {
             Button(action: {
                 print("What's New? tapped!")
@@ -59,7 +60,14 @@ struct GridCardView: View {
     ]
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
+                  Text("Top Pick For You")
+                      .font(.headline)
+                      .padding(.horizontal)
+            Divider()
+                .frame(height: 1)
+                .background(Color.black)
+                .padding(.horizontal)
             ButtonView()
             LazyVGrid(columns: columns, spacing: 0) {
                 ForEach(restaurants.prefix(6), id: \.id) { restaurant in

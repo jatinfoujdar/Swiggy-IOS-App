@@ -1,24 +1,26 @@
 import SwiftUI
 
 struct RestaurantListView: View {
-
-    var restaurants: [Restaurant]  
+    var restaurants: [Restaurant]
 
     var body: some View {
-        HeaderView()
-        ScrollView {
-            CardCrousal()
-            
-            VStack(spacing: 10) {
-                ForEach(restaurants, id: \.id) { restaurant in
+        VStack {
+            HeaderView()
+
+            ScrollView {
+                CardCrousal()
+                GridCardView(restaurants: restaurants)
                 
-                    RestaurantCardView(restaurant: restaurant)
+                VStack(spacing: 10) {
+                    ForEach(restaurants, id: \.id) { restaurant in
+                        RestaurantCardView(restaurant: restaurant)
+                    }
                 }
+                .padding()
             }
-            .padding()
-            
+
+            NavbarView() // Navbar
         }
-        NavbarView()
     }
 }
 

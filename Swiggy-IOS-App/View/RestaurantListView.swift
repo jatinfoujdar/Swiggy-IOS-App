@@ -14,7 +14,7 @@ struct RestaurantListView: View {
                      StickyFilterView()
                      VStack(alignment: .leading){
                      HStack {
-                         Text("Top 2323 restaurants to explore ─────")
+                         Text("Tap for deatiled View ──────────")
                              .font(.headline)
                          
                      }

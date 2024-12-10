@@ -4,8 +4,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HeaderView()
-        
+        RestaurantListView(restaurants: restaurants)
     }
 }
 

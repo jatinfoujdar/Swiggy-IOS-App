@@ -36,90 +36,97 @@ struct RestaurantDetailedView: View {
                         .foregroundColor(.secondary)
                         .padding()
                     HStack(spacing: 16) {
-                                       VStack {
-                                           Text("4.96")
-                                               .font(.title3)
-                                               .fontWeight(.semibold)
-                                           Text("168 Reviews")
-                                               .font(.subheadline)
-                                               .foregroundColor(.gray)
-                                       }
-
-                                       Divider()
-
-                                       VStack {
-                                           Image(systemName: "leaf")
-                                               .font(.title3)
-                                               .foregroundColor(.green)
-                                           Text("Eco-friendly")
-                                               .font(.subheadline)
-                                               .foregroundColor(.gray)
-                                       }
-
-                                       Divider()
-
-                                       VStack {
-                                           Image(systemName: "star.fill")
-                                               .font(.title3)
-                                               .foregroundColor(.yellow)
-                                           Text("Top Rated")
-                                               .font(.subheadline)
-                                               .foregroundColor(.gray)
-                                       }
-                                   }
-                                   .padding(.horizontal)
-
-                                  
-                                   HStack(spacing: 16) {
-                                       Image("host")
-                                           .resizable()
-                                           .frame(width: 50, height: 50)
-                                           .clipShape(Circle())
-
-                                       VStack(alignment: .leading) {
-                                           Text("Hosted by Cito")
-                                               .font(.headline)
-
-                                           Text("Superhost · 8 years hosting")
-                                               .font(.subheadline)
-                                               .foregroundColor(.gray)
-                                       }
-                                   }
-                                   .padding(.horizontal)
-
-                                 
-                                   HStack {
-                                       VStack(alignment: .leading) {
-                                           Text("₹16,012")
-                                               .font(.subheadline)
-                                               .strikethrough()
-                                               .foregroundColor(.gray)
-
-                                           Text("₹14,410 / night")
-                                               .font(.title3)
-                                               .fontWeight(.bold)
-                                       }
-
-                                       Spacer()
-
-                                       Button(action: {
-                                           print("Reserve button tapped")
-                                       }) {
-                                           Text("Reserve")
-                                               .fontWeight(.bold)
-                                               .foregroundColor(.white)
-                                               .padding()
-                                               .frame(maxWidth: 150)
-                                               .background(Color.red)
-                                               .cornerRadius(8)
-                                       }
-                                   }
-                                   .padding(.horizontal)
-
-                                   Spacer()
-                          }
+                        VStack {
+                            Text("4.96")
+                                .font(.title3)
+                                .fontWeight(.semibold)
+                            Text("168 Reviews")
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                        }
+                        
+                        Divider()
+                        
+                        VStack {
+                            Image(systemName: "leaf")
+                                .font(.title3)
+                                .foregroundColor(.green)
+                            Text("Eco-friendly")
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                        }
+                        
+                        Divider()
+                        
+                        VStack {
+                            Image(systemName: "star.fill")
+                                .font(.title3)
+                                .foregroundColor(.yellow)
+                            Text("Top Rated")
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                        }
+                    }
+                    .padding()
+                    .background(Color.white)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.gray, lineWidth: 1)
+                    )
+                    .padding(.horizontal)
+                    
+                    
+                    HStack(spacing: 16) {
+                        Image("host")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .clipShape(Circle())
+                        
+                        VStack(alignment: .leading) {
+                            Text("Hosted by Cito")
+                                .font(.headline)
+                            
+                            Text("Superhost · 8 years hosting")
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                        }
+                    }
+                    .padding(.horizontal)
+                    
+                    
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("₹16,012")
+                                .font(.subheadline)
+                                .strikethrough()
+                                .foregroundColor(.gray)
+                            
+                            Text("₹14,410 / night")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                        }
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            print("Reserve button tapped")
+                        }) {
+                            Text("Reserve")
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                                .padding()
+                                .frame(maxWidth: 150)
+                                .background(Color.red)
+                                .cornerRadius(8)
+                        }
+                    }
+                    .padding(.horizontal)
+                    
+                    Spacer()
+                }
             }
         }
+        .padding()
     }
 }
 

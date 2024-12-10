@@ -10,10 +10,11 @@ struct StickyFilterView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 16, height: 16)
-                            .foregroundColor(.black)
+                            .foregroundColor(.orange)
                         
                         Text(category)
                             .font(.subheadline)
+                            
                     }
                     .padding(.vertical, 8)
                     .padding(.horizontal, 16)
@@ -21,12 +22,12 @@ struct StickyFilterView: View {
                     .clipShape(Capsule())
                     .overlay(
                         Capsule()
-                            .stroke(Color.black, lineWidth: 1)
+                            .stroke(Color.orange, lineWidth: 1)
                         
                     )
                 }
-                
             }
+            
             .padding(.horizontal)
            
             .padding()

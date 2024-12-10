@@ -59,6 +59,7 @@ struct RestaurantListView: View {
                     .refreshable {
                         await refreshData()
                     }
+                          NavbarView()
                 }
             }
             .onAppear {

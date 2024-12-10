@@ -2,6 +2,7 @@ import SwiftUI
 
 struct RestaurantDetailedView: View {
     var restaurant: Restaurant
+   
 
     var body: some View {
         VStack(spacing: 0) {
@@ -36,6 +37,7 @@ struct RestaurantDetailedView: View {
                         .frame(height: 400)
                         .clipped()
                         .cornerRadius(12)
+                      
                 } placeholder: {
                     ProgressView()
                         .progressViewStyle(CircularProgressViewStyle(tint: .blue))
@@ -51,7 +53,7 @@ struct RestaurantDetailedView: View {
             Text(restaurant.name)
                 .font(.largeTitle)
                 .fontWeight(.bold)
-
+               
             Text("Agdamba Fuel Company, Vinayak Marg")
                 .fontWeight(.semibold)
 

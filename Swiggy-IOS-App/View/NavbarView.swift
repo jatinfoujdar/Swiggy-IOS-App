@@ -14,22 +14,22 @@ struct NavbarView: View {
         HStack {
             ForEach(iconNames, id: \.0) { icon in
                 VStack {
-                   
                     if icon.0.contains("icons8-rocket-64") {
                         Image(icon.0)
                             .resizable()
                             .scaledToFit()
                             .frame(width: 25, height: 25)
+                            .foregroundColor(icon.1 == "Food" ? .orange : .black) 
                     } else {
                         Image(systemName: icon.0)
                             .font(.system(size: 25))
                             .frame(width: 25, height: 25)
+                            .foregroundColor(icon.1 == "Food" ? .orange : .black)
                     }
                     
-                  
                     Text(icon.1)
                         .font(.caption)
-                        .foregroundColor(.black)
+                        .foregroundColor(icon.1 == "Food" ? .orange : .black)
                 }
                 .frame(maxWidth: .infinity)
             }

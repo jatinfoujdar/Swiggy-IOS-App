@@ -1,5 +1,5 @@
 import SwiftUI
-import Lottie
+
 
 struct HeaderView: View {
     var body: some View {
@@ -23,10 +23,11 @@ struct HeaderView: View {
                         .font(.system(size: 25))
                         .foregroundColor(.black)
                 }
-               
+                
                 .padding(.horizontal)
-               
+                
             }
+            
             HStack(spacing: 20) {
                 Text("Search")
                     .foregroundColor(.black)
@@ -42,13 +43,13 @@ struct HeaderView: View {
             .background(Color.gray.opacity(0.2))
             .cornerRadius(10)
             .padding(.horizontal)
-            
         }
-       
         .cornerRadius(10)
     }
-}
+    
+       
 
+}
 #Preview {
     HeaderView()
 }

@@ -38,7 +38,9 @@ struct NavbarView: View {
                                 .font(.caption)
                                 .foregroundColor(icon.1 == "Food" ? .orange : .black)
                                 .padding(.horizontal, 8)
-                               
+                                .sheet(isPresented: $showExchangeInfo){
+                                    CardSliderView()
+                                }
                                 
                         }
                     } else {

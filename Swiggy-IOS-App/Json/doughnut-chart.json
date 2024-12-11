@@ -1,0 +1,1700 @@
+{
+    "customisation guide": "Please edit line 86. It looks like that: 85,up,DC48480 - where 85 is the percentage, up or down is the pointer direction and DC48480 is the hex chart color",
+    "v": "5.11.0",
+    "fr": 25,
+    "ip": 0,
+    "op": 125,
+    "w": 650,
+    "h": 650,
+    "nm": "pieChartOne",
+    "ddd": 0,
+    "assets": [],
+    "fonts": {
+        "list": [
+            {
+                "origin": 0,
+                "fPath": "",
+                "fClass": "",
+                "fFamily": "Noto Sans",
+                "fWeight": "",
+                "fStyle": "Bold",
+                "fName": "NotoSans-Bold",
+                "ascent": 79.9994506835938
+            }
+        ]
+    },
+    "layers": [
+        {
+            "ddd": 0,
+            "ind": 1,
+            "ty": 5,
+            "nm": ".textVariables #textVariables",
+            "ln": "textVariables",
+            "cl": "textVariables",
+            "hd": true,
+            "sr": 1,
+            "ks": {
+                "o": {
+                    "a": 0,
+                    "k": 100,
+                    "ix": 11
+                },
+                "r": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 10
+                },
+                "p": {
+                    "a": 0,
+                    "k": [
+                        362,
+                        129.887,
+                        0
+                    ],
+                    "ix": 2,
+                    "l": 2
+                },
+                "a": {
+                    "a": 0,
+                    "k": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "ix": 1,
+                    "l": 2
+                },
+                "s": {
+                    "a": 0,
+                    "k": [
+                        100,
+                        100,
+                        100
+                    ],
+                    "ix": 6,
+                    "l": 2
+                }
+            },
+            "ao": 0,
+            "t": {
+                "d": {
+                    "k": [
+                        {
+                            "s": {
+                                "s": 45,
+                                "f": "NotoSans-Bold",
+                                "t": "85,up,DC48480",
+                                "ca": 0,
+                                "j": 2,
+                                "tr": 0,
+                                "lh": 54.0000038146973,
+                                "ls": 0,
+                                "fc": [
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            },
+                            "t": 0
+                        }
+                    ]
+                },
+                "p": {},
+                "m": {
+                    "g": 1,
+                    "a": {
+                        "a": 0,
+                        "k": [
+                            0,
+                            0
+                        ],
+                        "ix": 2
+                    }
+                },
+                "a": []
+            },
+            "ip": 0,
+            "op": 125,
+            "st": 0,
+            "ct": 1,
+            "bm": 0
+        },
+        {
+            "ddd": 0,
+            "ind": 2,
+            "ty": 5,
+            "nm": ".pieChartOnePercText #pieChartOnePercText",
+            "ln": "pieChartOnePercText",
+            "cl": "pieChartOnePercText",
+            "sr": 1,
+            "ks": {
+                "o": {
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.667
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    0.333
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 6,
+                            "s": [
+                                0
+                            ]
+                        },
+                        {
+                            "i": {
+                                "x": [
+                                    0.833
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    0.333
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 14,
+                            "s": [
+                                100
+                            ]
+                        },
+                        {
+                            "i": {
+                                "x": [
+                                    0.833
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    0.167
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 111,
+                            "s": [
+                                100
+                            ]
+                        },
+                        {
+                            "t": 123,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
+                    "ix": 11
+                },
+                "r": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 10
+                },
+                "p": {
+                    "a": 0,
+                    "k": [
+                        317,
+                        331.6,
+                        0
+                    ],
+                    "ix": 2,
+                    "l": 2
+                },
+                "a": {
+                    "a": 0,
+                    "k": [
+                        0,
+                        -50.4,
+                        0
+                    ],
+                    "ix": 1,
+                    "l": 2
+                },
+                "s": {
+                    "a": 0,
+                    "k": [
+                        100,
+                        100,
+                        100
+                    ],
+                    "ix": 6,
+                    "l": 2,
+                    "x": "var $bm_rt;\nvar targetSize, realSize, x, x, y;\ntargetSize = 290;\nrealSize = thisLayer.sourceRectAtTime().width;\nif (realSize > targetSize) {\n    x = $bm_mul($bm_div(targetSize, realSize), 100);\n} else {\n    x = 100;\n}\ny = value[1];\n$bm_rt = [\n    x,\n    y\n];"
+                }
+            },
+            "ao": 0,
+            "ef": [
+                {
+                    "ty": 5,
+                    "nm": "Slider Control",
+                    "np": 3,
+                    "mn": "ADBE Slider Control",
+                    "ix": 1,
+                    "en": 1,
+                    "ef": [
+                        {
+                            "ty": 0,
+                            "nm": "Slider",
+                            "mn": "ADBE Slider Control-0001",
+                            "ix": 1,
+                            "v": {
+                                "a": 1,
+                                "k": [
+                                    {
+                                        "i": {
+                                            "x": [
+                                                0.667
+                                            ],
+                                            "y": [
+                                                1
+                                            ]
+                                        },
+                                        "o": {
+                                            "x": [
+                                                0.333
+                                            ],
+                                            "y": [
+                                                0
+                                            ]
+                                        },
+                                        "t": 9,
+                                        "s": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "t": 45,
+                                        "s": [
+                                            25
+                                        ]
+                                    }
+                                ],
+                                "ix": 1,
+                                "x": "var $bm_rt;\nvar t1, t2;\nt1 = key(1).time;\nt2 = key(2).time;\nvalue = Math.round(thisComp.layer('.textVariables #textVariables').text.sourceText.split(',')[0]);\n$bm_rt = ease(time, t1, t2, 0, value);"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ty": 25,
+                    "nm": "Drop Shadow",
+                    "np": 8,
+                    "mn": "ADBE Drop Shadow",
+                    "ix": 2,
+                    "en": 1,
+                    "ef": [
+                        {
+                            "ty": 2,
+                            "nm": "Shadow Color",
+                            "mn": "ADBE Drop Shadow-0001",
+                            "ix": 1,
+                            "v": {
+                                "a": 0,
+                                "k": [
+                                    0,
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "ix": 1
+                            }
+                        },
+                        {
+                            "ty": 0,
+                            "nm": "Opacity",
+                            "mn": "ADBE Drop Shadow-0002",
+                            "ix": 2,
+                            "v": {
+                                "a": 0,
+                                "k": 102,
+                                "ix": 2
+                            }
+                        },
+                        {
+                            "ty": 0,
+                            "nm": "Direction",
+                            "mn": "ADBE Drop Shadow-0003",
+                            "ix": 3,
+                            "v": {
+                                "a": 0,
+                                "k": 122,
+                                "ix": 3
+                            }
+                        },
+                        {
+                            "ty": 0,
+                            "nm": "Distance",
+                            "mn": "ADBE Drop Shadow-0004",
+                            "ix": 4,
+                            "v": {
+                                "a": 0,
+                                "k": 5,
+                                "ix": 4
+                            }
+                        },
+                        {
+                            "ty": 0,
+                            "nm": "Softness",
+                            "mn": "ADBE Drop Shadow-0005",
+                            "ix": 5,
+                            "v": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 5
+                            }
+                        },
+                        {
+                            "ty": 7,
+                            "nm": "Shadow Only",
+                            "mn": "ADBE Drop Shadow-0006",
+                            "ix": 6,
+                            "v": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 6
+                            }
+                        }
+                    ]
+                }
+            ],
+            "t": {
+                "d": {
+                    "k": [
+                        {
+                            "s": {
+                                "s": 144,
+                                "f": "NotoSans-Bold",
+                                "t": "",
+                                "ca": 0,
+                                "j": 2,
+                                "tr": 0,
+                                "lh": 172.800003051758,
+                                "ls": 0,
+                                "fc": [
+                                    1,
+                                    1,
+                                    1
+                                ],
+                                "sc": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "sw": 4,
+                                "of": true
+                            },
+                            "t": 0
+                        }
+                    ],
+                    "x": "var $bm_rt;\n$bm_rt = $bm_sum(Math.round(effect('Slider Control')('Slider')), '%');"
+                },
+                "p": {},
+                "m": {
+                    "g": 1,
+                    "a": {
+                        "a": 0,
+                        "k": [
+                            0,
+                            0
+                        ],
+                        "ix": 2
+                    }
+                },
+                "a": []
+            },
+            "ip": 6,
+            "op": 125,
+            "st": 0,
+            "ct": 1,
+            "bm": 0
+        },
+        {
+            "ddd": 0,
+            "ind": 3,
+            "ty": 4,
+            "nm": "pieChartOne",
+            "sr": 1,
+            "ks": {
+                "o": {
+                    "a": 0,
+                    "k": 100,
+                    "ix": 11
+                },
+                "r": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 10
+                },
+                "p": {
+                    "a": 0,
+                    "k": [
+                        322,
+                        327,
+                        0
+                    ],
+                    "ix": 2,
+                    "l": 2
+                },
+                "a": {
+                    "a": 0,
+                    "k": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "ix": 1,
+                    "l": 2
+                },
+                "s": {
+                    "a": 0,
+                    "k": [
+                        100,
+                        100,
+                        100
+                    ],
+                    "ix": 6,
+                    "l": 2
+                }
+            },
+            "ao": 0,
+            "shapes": [
+                {
+                    "ty": "gr",
+                    "it": [
+                        {
+                            "ty": "gr",
+                            "it": [
+                                {
+                                    "d": 1,
+                                    "ty": "el",
+                                    "s": {
+                                        "a": 0,
+                                        "k": [
+                                            418,
+                                            418
+                                        ],
+                                        "ix": 2
+                                    },
+                                    "p": {
+                                        "a": 0,
+                                        "k": [
+                                            0,
+                                            0
+                                        ],
+                                        "ix": 3
+                                    },
+                                    "nm": "Ellipse Path 1",
+                                    "mn": "ADBE Vector Shape - Ellipse",
+                                    "hd": false
+                                },
+                                {
+                                    "ty": "st",
+                                    "c": {
+                                        "a": 0,
+                                        "k": [
+                                            0.784313976765,
+                                            0.08095446229,
+                                            0,
+                                            1
+                                        ],
+                                        "ix": 3,
+                                        "x": "var $bm_rt;\nvar userColor, r, g, b;\nuserColor = thisComp.layer('.textVariables #textVariables').text.sourceText.split(',')[2];\nr = $bm_div(parseInt(userColor.substr(0, 2), 16), 255);\ng = $bm_div(parseInt(userColor.substr(2, 2), 16), 255);\nb = $bm_div(parseInt(userColor.substr(4, 2), 16), 255);\n$bm_rt = [\n    r,\n    g,\n    b,\n    1\n];"
+                                    },
+                                    "o": {
+                                        "a": 0,
+                                        "k": 100,
+                                        "ix": 4
+                                    },
+                                    "w": {
+                                        "a": 0,
+                                        "k": 85,
+                                        "ix": 5
+                                    },
+                                    "lc": 1,
+                                    "lj": 1,
+                                    "ml": 4,
+                                    "bm": 0,
+                                    "nm": "Stroke 1",
+                                    "mn": "ADBE Vector Graphic - Stroke",
+                                    "hd": false
+                                },
+                                {
+                                    "ty": "fl",
+                                    "c": {
+                                        "a": 0,
+                                        "k": [
+                                            0.862745098039,
+                                            0.282352941176,
+                                            0.282352941176,
+                                            1
+                                        ],
+                                        "ix": 4
+                                    },
+                                    "o": {
+                                        "a": 0,
+                                        "k": 100,
+                                        "ix": 5
+                                    },
+                                    "r": 1,
+                                    "bm": 0,
+                                    "nm": "Fill 1",
+                                    "mn": "ADBE Vector Graphic - Fill",
+                                    "hd": true
+                                },
+                                {
+                                    "ty": "tr",
+                                    "p": {
+                                        "a": 0,
+                                        "k": [
+                                            0,
+                                            0
+                                        ],
+                                        "ix": 2
+                                    },
+                                    "a": {
+                                        "a": 0,
+                                        "k": [
+                                            0,
+                                            0
+                                        ],
+                                        "ix": 1
+                                    },
+                                    "s": {
+                                        "a": 0,
+                                        "k": [
+                                            100,
+                                            100
+                                        ],
+                                        "ix": 3
+                                    },
+                                    "r": {
+                                        "a": 0,
+                                        "k": 0,
+                                        "ix": 6
+                                    },
+                                    "o": {
+                                        "a": 0,
+                                        "k": 100,
+                                        "ix": 7
+                                    },
+                                    "sk": {
+                                        "a": 0,
+                                        "k": 0,
+                                        "ix": 4
+                                    },
+                                    "sa": {
+                                        "a": 0,
+                                        "k": 0,
+                                        "ix": 5
+                                    },
+                                    "nm": "Transform"
+                                }
+                            ],
+                            "nm": "pieOneM",
+                            "np": 3,
+                            "cix": 2,
+                            "bm": 0,
+                            "ix": 1,
+                            "mn": "ADBE Vector Group",
+                            "hd": false
+                        },
+                        {
+                            "ty": "tm",
+                            "s": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 1
+                            },
+                            "e": {
+                                "a": 1,
+                                "k": [
+                                    {
+                                        "i": {
+                                            "x": [
+                                                0
+                                            ],
+                                            "y": [
+                                                1
+                                            ]
+                                        },
+                                        "o": {
+                                            "x": [
+                                                0.023
+                                            ],
+                                            "y": [
+                                                0
+                                            ]
+                                        },
+                                        "t": 10,
+                                        "s": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "i": {
+                                            "x": [
+                                                0.667
+                                            ],
+                                            "y": [
+                                                1
+                                            ]
+                                        },
+                                        "o": {
+                                            "x": [
+                                                0.333
+                                            ],
+                                            "y": [
+                                                0
+                                            ]
+                                        },
+                                        "t": 35,
+                                        "s": [
+                                            63
+                                        ]
+                                    },
+                                    {
+                                        "i": {
+                                            "x": [
+                                                0.667
+                                            ],
+                                            "y": [
+                                                1
+                                            ]
+                                        },
+                                        "o": {
+                                            "x": [
+                                                0.333
+                                            ],
+                                            "y": [
+                                                0
+                                            ]
+                                        },
+                                        "t": 111,
+                                        "s": [
+                                            63
+                                        ]
+                                    },
+                                    {
+                                        "t": 123,
+                                        "s": [
+                                            63
+                                        ]
+                                    }
+                                ],
+                                "ix": 2,
+                                "x": "var $bm_rt;\nvar t1, t2, t3, t4;\nt1 = key(1).time;\nt2 = key(2).time;\nt3 = key(3).time;\nt4 = key(4).time;\n$bm_rt = value = Math.round(thisComp.layer('.textVariables #textVariables').text.sourceText.split(',')[0]);\nif (time < t2) {\n    $bm_rt = ease(time, t1, t2, 0, value);\n} else {\n    $bm_rt = ease(time, t3, t4, value, 0);\n}"
+                            },
+                            "o": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 3
+                            },
+                            "m": 1,
+                            "ix": 2,
+                            "nm": "trimPathsPieOneM",
+                            "mn": "ADBE Vector Filter - Trim",
+                            "hd": false
+                        },
+                        {
+                            "ty": "tr",
+                            "p": {
+                                "a": 0,
+                                "k": [
+                                    0,
+                                    0
+                                ],
+                                "ix": 2
+                            },
+                            "a": {
+                                "a": 0,
+                                "k": [
+                                    0,
+                                    0
+                                ],
+                                "ix": 1
+                            },
+                            "s": {
+                                "a": 0,
+                                "k": [
+                                    100,
+                                    100
+                                ],
+                                "ix": 3
+                            },
+                            "r": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 6
+                            },
+                            "o": {
+                                "a": 0,
+                                "k": 100,
+                                "ix": 7
+                            },
+                            "sk": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 4
+                            },
+                            "sa": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 5
+                            },
+                            "nm": "Transform"
+                        }
+                    ],
+                    "nm": "pieOneMain",
+                    "np": 2,
+                    "cix": 2,
+                    "bm": 0,
+                    "ix": 1,
+                    "mn": "ADBE Vector Group",
+                    "hd": false
+                },
+                {
+                    "ty": "gr",
+                    "it": [
+                        {
+                            "ty": "gr",
+                            "it": [
+                                {
+                                    "d": 1,
+                                    "ty": "el",
+                                    "s": {
+                                        "a": 0,
+                                        "k": [
+                                            452,
+                                            452
+                                        ],
+                                        "ix": 2,
+                                        "x": "var $bm_rt;\n$bm_rt = content('pieOneMain').content('pieOneM').content('Ellipse Path 1').size;"
+                                    },
+                                    "p": {
+                                        "a": 0,
+                                        "k": [
+                                            0,
+                                            0
+                                        ],
+                                        "ix": 3
+                                    },
+                                    "nm": "Ellipse Path 1",
+                                    "mn": "ADBE Vector Shape - Ellipse",
+                                    "hd": false
+                                },
+                                {
+                                    "ty": "st",
+                                    "c": {
+                                        "a": 0,
+                                        "k": [
+                                            0.601455271244,
+                                            0.065944418311,
+                                            0.030579503626,
+                                            1
+                                        ],
+                                        "ix": 3,
+                                        "x": "var $bm_rt;\n$bm_rt = content('pieOneMain').content('pieOneM').content('Stroke 1').color;"
+                                    },
+                                    "o": {
+                                        "a": 0,
+                                        "k": 40,
+                                        "ix": 4
+                                    },
+                                    "w": {
+                                        "a": 0,
+                                        "k": 60,
+                                        "ix": 5
+                                    },
+                                    "lc": 1,
+                                    "lj": 1,
+                                    "ml": 4,
+                                    "bm": 0,
+                                    "nm": "Stroke 1",
+                                    "mn": "ADBE Vector Graphic - Stroke",
+                                    "hd": false
+                                },
+                                {
+                                    "ty": "fl",
+                                    "c": {
+                                        "a": 0,
+                                        "k": [
+                                            0.862745098039,
+                                            0.282352941176,
+                                            0.282352941176,
+                                            1
+                                        ],
+                                        "ix": 4
+                                    },
+                                    "o": {
+                                        "a": 0,
+                                        "k": 100,
+                                        "ix": 5
+                                    },
+                                    "r": 1,
+                                    "bm": 0,
+                                    "nm": "Fill 1",
+                                    "mn": "ADBE Vector Graphic - Fill",
+                                    "hd": true
+                                },
+                                {
+                                    "ty": "tr",
+                                    "p": {
+                                        "a": 0,
+                                        "k": [
+                                            0,
+                                            0
+                                        ],
+                                        "ix": 2
+                                    },
+                                    "a": {
+                                        "a": 0,
+                                        "k": [
+                                            0,
+                                            0
+                                        ],
+                                        "ix": 1
+                                    },
+                                    "s": {
+                                        "a": 0,
+                                        "k": [
+                                            100,
+                                            100
+                                        ],
+                                        "ix": 3
+                                    },
+                                    "r": {
+                                        "a": 0,
+                                        "k": 0,
+                                        "ix": 6
+                                    },
+                                    "o": {
+                                        "a": 0,
+                                        "k": 100,
+                                        "ix": 7
+                                    },
+                                    "sk": {
+                                        "a": 0,
+                                        "k": 0,
+                                        "ix": 4
+                                    },
+                                    "sa": {
+                                        "a": 0,
+                                        "k": 0,
+                                        "ix": 5
+                                    },
+                                    "nm": "Transform"
+                                }
+                            ],
+                            "nm": "pieOneUnder",
+                            "np": 3,
+                            "cix": 2,
+                            "bm": 0,
+                            "ix": 1,
+                            "mn": "ADBE Vector Group",
+                            "hd": false
+                        },
+                        {
+                            "ty": "tm",
+                            "s": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 1
+                            },
+                            "e": {
+                                "a": 1,
+                                "k": [
+                                    {
+                                        "i": {
+                                            "x": [
+                                                0
+                                            ],
+                                            "y": [
+                                                1
+                                            ]
+                                        },
+                                        "o": {
+                                            "x": [
+                                                0.033
+                                            ],
+                                            "y": [
+                                                0
+                                            ]
+                                        },
+                                        "t": 0,
+                                        "s": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "i": {
+                                            "x": [
+                                                0.833
+                                            ],
+                                            "y": [
+                                                1
+                                            ]
+                                        },
+                                        "o": {
+                                            "x": [
+                                                0.167
+                                            ],
+                                            "y": [
+                                                0
+                                            ]
+                                        },
+                                        "t": 20,
+                                        "s": [
+                                            100
+                                        ]
+                                    },
+                                    {
+                                        "i": {
+                                            "x": [
+                                                0.833
+                                            ],
+                                            "y": [
+                                                1
+                                            ]
+                                        },
+                                        "o": {
+                                            "x": [
+                                                0.167
+                                            ],
+                                            "y": [
+                                                0
+                                            ]
+                                        },
+                                        "t": 107,
+                                        "s": [
+                                            100
+                                        ]
+                                    },
+                                    {
+                                        "t": 123,
+                                        "s": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "ix": 2
+                            },
+                            "o": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 3
+                            },
+                            "m": 1,
+                            "ix": 2,
+                            "nm": "trimPathsPieOneUnder",
+                            "mn": "ADBE Vector Filter - Trim",
+                            "hd": false
+                        },
+                        {
+                            "ty": "tr",
+                            "p": {
+                                "a": 0,
+                                "k": [
+                                    0,
+                                    0
+                                ],
+                                "ix": 2
+                            },
+                            "a": {
+                                "a": 0,
+                                "k": [
+                                    0,
+                                    0
+                                ],
+                                "ix": 1
+                            },
+                            "s": {
+                                "a": 0,
+                                "k": [
+                                    100,
+                                    100
+                                ],
+                                "ix": 3
+                            },
+                            "r": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 6
+                            },
+                            "o": {
+                                "a": 0,
+                                "k": 100,
+                                "ix": 7
+                            },
+                            "sk": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 4
+                            },
+                            "sa": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 5
+                            },
+                            "nm": "Transform"
+                        }
+                    ],
+                    "nm": "pieOneUnderlay",
+                    "np": 2,
+                    "cix": 2,
+                    "bm": 0,
+                    "ix": 2,
+                    "mn": "ADBE Vector Group",
+                    "hd": false
+                }
+            ],
+            "ip": 0,
+            "op": 125,
+            "st": 0,
+            "ct": 1,
+            "bm": 0
+        },
+        {
+            "ddd": 0,
+            "ind": 4,
+            "ty": 4,
+            "nm": "arrowOne",
+            "sr": 1,
+            "ks": {
+                "o": {
+                    "a": 1,
+                    "k": [
+                        {
+                            "i": {
+                                "x": [
+                                    0.667
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    0.333
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 32,
+                            "s": [
+                                0
+                            ]
+                        },
+                        {
+                            "i": {
+                                "x": [
+                                    0.667
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    0.333
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 44,
+                            "s": [
+                                100
+                            ]
+                        },
+                        {
+                            "i": {
+                                "x": [
+                                    0.833
+                                ],
+                                "y": [
+                                    1
+                                ]
+                            },
+                            "o": {
+                                "x": [
+                                    0.333
+                                ],
+                                "y": [
+                                    0
+                                ]
+                            },
+                            "t": 111,
+                            "s": [
+                                100
+                            ]
+                        },
+                        {
+                            "t": 118,
+                            "s": [
+                                0
+                            ]
+                        }
+                    ],
+                    "ix": 11
+                },
+                "r": {
+                    "a": 0,
+                    "k": 0,
+                    "ix": 10
+                },
+                "p": {
+                    "a": 0,
+                    "k": [
+                        322,
+                        311,
+                        0
+                    ],
+                    "ix": 2,
+                    "l": 2
+                },
+                "a": {
+                    "a": 0,
+                    "k": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "ix": 1,
+                    "l": 2
+                },
+                "s": {
+                    "a": 0,
+                    "k": [
+                        100,
+                        100,
+                        100
+                    ],
+                    "ix": 6,
+                    "l": 2
+                }
+            },
+            "ao": 0,
+            "shapes": [
+                {
+                    "ty": "gr",
+                    "it": [
+                        {
+                            "ind": 0,
+                            "ty": "sh",
+                            "ix": 1,
+                            "ks": {
+                                "a": 0,
+                                "k": {
+                                    "i": [
+                                        [
+                                            0,
+                                            0
+                                        ],
+                                        [
+                                            0,
+                                            0
+                                        ],
+                                        [
+                                            0,
+                                            0
+                                        ]
+                                    ],
+                                    "o": [
+                                        [
+                                            0,
+                                            0
+                                        ],
+                                        [
+                                            0,
+                                            0
+                                        ],
+                                        [
+                                            0,
+                                            0
+                                        ]
+                                    ],
+                                    "v": [
+                                        [
+                                            39.75,
+                                            150
+                                        ],
+                                        [
+                                            -40,
+                                            150
+                                        ],
+                                        [
+                                            0,
+                                            100
+                                        ]
+                                    ],
+                                    "c": true
+                                },
+                                "ix": 2
+                            },
+                            "nm": "Path 1",
+                            "mn": "ADBE Vector Shape - Group",
+                            "hd": false
+                        },
+                        {
+                            "ty": "st",
+                            "c": {
+                                "a": 0,
+                                "k": [
+                                    0,
+                                    0.784313964844,
+                                    0.166090004117,
+                                    1
+                                ],
+                                "ix": 3
+                            },
+                            "o": {
+                                "a": 0,
+                                "k": 100,
+                                "ix": 4
+                            },
+                            "w": {
+                                "a": 0,
+                                "k": 13,
+                                "ix": 5
+                            },
+                            "lc": 1,
+                            "lj": 1,
+                            "ml": 4,
+                            "bm": 0,
+                            "nm": "Stroke 1",
+                            "mn": "ADBE Vector Graphic - Stroke",
+                            "hd": true
+                        },
+                        {
+                            "ty": "fl",
+                            "c": {
+                                "a": 0,
+                                "k": [
+                                    0.059238751729,
+                                    0.839215686275,
+                                    0.151000826967,
+                                    1
+                                ],
+                                "ix": 4
+                            },
+                            "o": {
+                                "a": 0,
+                                "k": 100,
+                                "ix": 5
+                            },
+                            "r": 1,
+                            "bm": 0,
+                            "nm": "Fill 1",
+                            "mn": "ADBE Vector Graphic - Fill",
+                            "hd": false
+                        },
+                        {
+                            "ty": "tr",
+                            "p": {
+                                "a": 1,
+                                "k": [
+                                    {
+                                        "i": {
+                                            "x": 0.021,
+                                            "y": 1
+                                        },
+                                        "o": {
+                                            "x": 0.03,
+                                            "y": 0
+                                        },
+                                        "t": 29,
+                                        "s": [
+                                            0,
+                                            78
+                                        ],
+                                        "to": [
+                                            0,
+                                            -13
+                                        ],
+                                        "ti": [
+                                            0,
+                                            13
+                                        ]
+                                    },
+                                    {
+                                        "i": {
+                                            "x": 0.021,
+                                            "y": 0.021
+                                        },
+                                        "o": {
+                                            "x": 0.333,
+                                            "y": 0.333
+                                        },
+                                        "t": 44,
+                                        "s": [
+                                            0,
+                                            0
+                                        ],
+                                        "to": [
+                                            0,
+                                            0
+                                        ],
+                                        "ti": [
+                                            0,
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "i": {
+                                            "x": 0.833,
+                                            "y": 1
+                                        },
+                                        "o": {
+                                            "x": 0.167,
+                                            "y": 0
+                                        },
+                                        "t": 111,
+                                        "s": [
+                                            0,
+                                            0
+                                        ],
+                                        "to": [
+                                            0,
+                                            13
+                                        ],
+                                        "ti": [
+                                            0,
+                                            -13
+                                        ]
+                                    },
+                                    {
+                                        "t": 123,
+                                        "s": [
+                                            0,
+                                            78
+                                        ]
+                                    }
+                                ],
+                                "ix": 2
+                            },
+                            "a": {
+                                "a": 0,
+                                "k": [
+                                    0,
+                                    0
+                                ],
+                                "ix": 1
+                            },
+                            "s": {
+                                "a": 0,
+                                "k": [
+                                    100,
+                                    100
+                                ],
+                                "ix": 3
+                            },
+                            "r": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 6
+                            },
+                            "o": {
+                                "a": 0,
+                                "k": 100,
+                                "ix": 7,
+                                "x": "var $bm_rt;\nif (thisComp.layer('.textVariables #textVariables').text.sourceText.split(',')[1] == 'up') {\n    $bm_rt = 100;\n} else {\n    $bm_rt = 0;\n}"
+                            },
+                            "sk": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 4
+                            },
+                            "sa": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 5
+                            },
+                            "nm": "Transform"
+                        }
+                    ],
+                    "nm": "upOne",
+                    "np": 3,
+                    "cix": 2,
+                    "bm": 0,
+                    "ix": 1,
+                    "mn": "ADBE Vector Group",
+                    "hd": false
+                },
+                {
+                    "ty": "gr",
+                    "it": [
+                        {
+                            "ind": 0,
+                            "ty": "sh",
+                            "ix": 1,
+                            "ks": {
+                                "a": 0,
+                                "k": {
+                                    "i": [
+                                        [
+                                            0,
+                                            0
+                                        ],
+                                        [
+                                            0,
+                                            0
+                                        ],
+                                        [
+                                            0,
+                                            0
+                                        ]
+                                    ],
+                                    "o": [
+                                        [
+                                            0,
+                                            0
+                                        ],
+                                        [
+                                            0,
+                                            0
+                                        ],
+                                        [
+                                            0,
+                                            0
+                                        ]
+                                    ],
+                                    "v": [
+                                        [
+                                            39.875,
+                                            100
+                                        ],
+                                        [
+                                            -40,
+                                            100
+                                        ],
+                                        [
+                                            0,
+                                            149.5
+                                        ]
+                                    ],
+                                    "c": true
+                                },
+                                "ix": 2
+                            },
+                            "nm": "Path 1",
+                            "mn": "ADBE Vector Shape - Group",
+                            "hd": false
+                        },
+                        {
+                            "ty": "st",
+                            "c": {
+                                "a": 0,
+                                "k": [
+                                    0,
+                                    0.784313964844,
+                                    0.166090004117,
+                                    1
+                                ],
+                                "ix": 3
+                            },
+                            "o": {
+                                "a": 0,
+                                "k": 100,
+                                "ix": 4
+                            },
+                            "w": {
+                                "a": 0,
+                                "k": 13,
+                                "ix": 5
+                            },
+                            "lc": 1,
+                            "lj": 1,
+                            "ml": 4,
+                            "bm": 0,
+                            "nm": "Stroke 1",
+                            "mn": "ADBE Vector Graphic - Stroke",
+                            "hd": true
+                        },
+                        {
+                            "ty": "fl",
+                            "c": {
+                                "a": 0,
+                                "k": [
+                                    0.862745098039,
+                                    0.282352941176,
+                                    0.282352941176,
+                                    1
+                                ],
+                                "ix": 4
+                            },
+                            "o": {
+                                "a": 0,
+                                "k": 100,
+                                "ix": 5
+                            },
+                            "r": 1,
+                            "bm": 0,
+                            "nm": "Fill 1",
+                            "mn": "ADBE Vector Graphic - Fill",
+                            "hd": false
+                        },
+                        {
+                            "ty": "tr",
+                            "p": {
+                                "a": 1,
+                                "k": [
+                                    {
+                                        "i": {
+                                            "x": 0,
+                                            "y": 1
+                                        },
+                                        "o": {
+                                            "x": 0.044,
+                                            "y": 0
+                                        },
+                                        "t": 29,
+                                        "s": [
+                                            0,
+                                            -80
+                                        ],
+                                        "to": [
+                                            0,
+                                            13.333
+                                        ],
+                                        "ti": [
+                                            0,
+                                            -13.333
+                                        ]
+                                    },
+                                    {
+                                        "i": {
+                                            "x": 0,
+                                            "y": 0
+                                        },
+                                        "o": {
+                                            "x": 0.333,
+                                            "y": 0.333
+                                        },
+                                        "t": 44,
+                                        "s": [
+                                            0,
+                                            0
+                                        ],
+                                        "to": [
+                                            0,
+                                            0
+                                        ],
+                                        "ti": [
+                                            0,
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "i": {
+                                            "x": 0.833,
+                                            "y": 1
+                                        },
+                                        "o": {
+                                            "x": 0.333,
+                                            "y": 0
+                                        },
+                                        "t": 111,
+                                        "s": [
+                                            0,
+                                            0
+                                        ],
+                                        "to": [
+                                            0,
+                                            -13.333
+                                        ],
+                                        "ti": [
+                                            0,
+                                            13.333
+                                        ]
+                                    },
+                                    {
+                                        "t": 123,
+                                        "s": [
+                                            0,
+                                            -80
+                                        ]
+                                    }
+                                ],
+                                "ix": 2
+                            },
+                            "a": {
+                                "a": 0,
+                                "k": [
+                                    0,
+                                    0
+                                ],
+                                "ix": 1
+                            },
+                            "s": {
+                                "a": 0,
+                                "k": [
+                                    100,
+                                    100
+                                ],
+                                "ix": 3
+                            },
+                            "r": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 6
+                            },
+                            "o": {
+                                "a": 0,
+                                "k": 100,
+                                "ix": 7,
+                                "x": "var $bm_rt;\nif (thisComp.layer('.textVariables #textVariables').text.sourceText.split(',')[1] == 'down') {\n    $bm_rt = 100;\n} else {\n    $bm_rt = 0;\n}"
+                            },
+                            "sk": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 4
+                            },
+                            "sa": {
+                                "a": 0,
+                                "k": 0,
+                                "ix": 5
+                            },
+                            "nm": "Transform"
+                        }
+                    ],
+                    "nm": "downOne",
+                    "np": 3,
+                    "cix": 2,
+                    "bm": 0,
+                    "ix": 2,
+                    "mn": "ADBE Vector Group",
+                    "hd": false
+                }
+            ],
+            "ip": 0,
+            "op": 125,
+            "st": 0,
+            "ct": 1,
+            "bm": 0
+        }
+    ],
+    "markers": [],
+    "props": {}
+}

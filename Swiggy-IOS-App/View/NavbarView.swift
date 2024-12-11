@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct NavbarView: View {
+    @State var  showExchangeInfo = false
+    
     let iconNames = [
         ("arrowshape.backward.circle", "Home"),
         ("fork.knife.circle", "Food"),
@@ -19,7 +21,7 @@ struct NavbarView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 25, height: 25)
-                            .foregroundColor(icon.1 == "Food" ? .orange : .black) 
+                            .foregroundColor(icon.1 == "Food" ? .orange : .black)
                     } else {
                         Image(systemName: icon.0)
                             .font(.system(size: 25))
@@ -27,9 +29,23 @@ struct NavbarView: View {
                             .foregroundColor(icon.1 == "Food" ? .orange : .black)
                     }
                     
-                    Text(icon.1)
-                        .font(.caption)
-                        .foregroundColor(icon.1 == "Food" ? .orange : .black)
+                    if icon.1 == "Card" {
+                        Button(action: {
+                            showExchangeInfo.toggle()
+                            print("Card button pressed")
+                        }) {
+                            Text(icon.1)
+                                .font(.caption)
+                                .foregroundColor(icon.1 == "Food" ? .orange : .black)
+                                .padding(.horizontal, 8)
+                               
+                                
+                        }
+                    } else {
+                        Text(icon.1)
+                            .font(.caption)
+                            .foregroundColor(icon.1 == "Food" ? .orange : .black)
+                    }
                 }
                 .frame(maxWidth: .infinity)
             }
@@ -41,3 +57,4 @@ struct NavbarView: View {
 #Preview {
     NavbarView()
 }
+ 

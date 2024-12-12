@@ -45,7 +45,7 @@ struct NavbarView: View {
                                 
                         }
                     } else if icon.1 == "Cart" {
-                        NavigationLink(destination: CartUIView()) {
+                        NavigationLink(destination: CartView()) {
                             Text(icon.1)
                                 .font(.caption)
                                 .foregroundColor(icon.1 == "Food" ? .orange : .black)
@@ -53,6 +53,7 @@ struct NavbarView: View {
                         .simultaneousGesture(TapGesture().onEnded {
                             showCart.toggle()
                         })
+                       
                     } else {
                         Text(icon.1)
                             .font(.caption)

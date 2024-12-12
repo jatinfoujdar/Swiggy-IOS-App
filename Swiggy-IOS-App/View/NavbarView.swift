@@ -2,6 +2,7 @@ import SwiftUI
 
 struct NavbarView: View {
     @State var  showExchangeInfo = false
+    @State var showCart = false
     
     let iconNames = [
         ("arrowshape.backward.circle", "Home"),
@@ -43,6 +44,15 @@ struct NavbarView: View {
                                 }
                                 
                         }
+                    } else if icon.1 == "Cart" {
+                        NavigationLink(destination: CartUIView()) {
+                            Text(icon.1)
+                                .font(.caption)
+                                .foregroundColor(icon.1 == "Food" ? .orange : .black)
+                        }
+                        .simultaneousGesture(TapGesture().onEnded {
+                            showCart.toggle()
+                        })
                     } else {
                         Text(icon.1)
                             .font(.caption)
@@ -59,4 +69,3 @@ struct NavbarView: View {
 #Preview {
     NavbarView()
 }
- 

@@ -7,6 +7,9 @@ struct CardSliderView: View {
     var body: some View {
         ZStack{
             Color.orange
+            LottieView(animation: .named("confetti"))
+                .playbackMode(.playing(.toProgress(1, loopMode: .loop)))
+                .frame(width: 200, height: 200)
             VStack{
                 Image("logow")
                

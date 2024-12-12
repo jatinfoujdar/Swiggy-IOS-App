@@ -24,9 +24,16 @@ struct Restaurant: Codable, Identifiable {
         case lastMileTravelString
         case cloudinaryImageId
     }
-    
-  
+}
 
+
+
+struct CartItem: Identifiable {
+    let id = UUID()
+    var name: String
+    var details: String
+    var price: Int
+    var quantity: Int
 }
 
 

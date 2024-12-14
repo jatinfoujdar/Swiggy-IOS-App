@@ -6,7 +6,7 @@ struct ShimmerUIView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
-                .fill(Color.gray.opacity(0.3))
+                .fill(Color.orange.opacity(0.5))
                 .frame(height: 100)
             
             LinearGradient(gradient: Gradient(colors: [Color.clear, Color.white.opacity(0.7), Color.clear]),

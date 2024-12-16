@@ -10,11 +10,12 @@ struct CartView: View {
     var body: some View {
         VStack {
        
-            ScrollView {
+           
                 ForEach($cartItems) { $item in
                     CartItemView(item: $item, onUpdate: updateTotalAmount)
                         .padding(.horizontal)
                 }
+            ScrollView {
                 VStack{
                     HStack{
                         Text("Prefered Payment")
@@ -29,34 +30,34 @@ struct CartView: View {
                         .foregroundColor(.gray)
                     
                     
-                    TaptoView(cardImage: "swiggy-card")
+                    TaptoView(cardImage: "bankcard")
                     TaptoView(cardImage: "blackcard")
-                    
+                    TaptoView(cardImage: "swiggy-card")
                 }
             }
                 
               
-                VStack(alignment: .leading, spacing: 10) {
-                    Text("Delivering superfast!")
-                        .font(.headline)
-                    
-                    DeliveryOptionView(
-                        title: "Standard",
-                        description: "Minimal order grouping",
-                        time: "20-25 mins",
-                        isSelected: selectedDeliveryOption == "Standard",
-                        action: { selectedDeliveryOption = "Standard" }
-                    )
-                    
-                    DeliveryOptionView(
-                        title: "Eco Saver",
-                        description: "Lesser CO2 by order grouping",
-                        time: "25-30 mins",
-                        isSelected: selectedDeliveryOption == "Eco Saver",
-                        action: { selectedDeliveryOption = "Eco Saver" }
-                    )
-                }
-                .padding()
+//                VStack(alignment: .leading, spacing: 10) {
+//                    Text("Delivering superfast!")
+//                        .font(.headline)
+//                    
+//                    DeliveryOptionView(
+//                        title: "Standard",
+//                        description: "Minimal order grouping",
+//                        time: "20-25 mins",
+//                        isSelected: selectedDeliveryOption == "Standard",
+//                        action: { selectedDeliveryOption = "Standard" }
+//                    )
+//                    
+//                    DeliveryOptionView(
+//                        title: "Eco Saver",
+//                        description: "Lesser CO2 by order grouping",
+//                        time: "25-30 mins",
+//                        isSelected: selectedDeliveryOption == "Eco Saver",
+//                        action: { selectedDeliveryOption = "Eco Saver" }
+//                    )
+//                }
+//                .padding()
                 
                 Divider()
                 Spacer()

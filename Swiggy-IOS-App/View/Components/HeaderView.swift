@@ -7,21 +7,28 @@ struct HeaderView: View {
             VStack{
                 HStack {
                     Image(systemName: "location.fill")
-                        .font(.system(size: 20))
+                        .font(.system(size: 24))
                         .foregroundColor(.orange)
-                    VStack{
-                        Text("Office⌄")
+                        .padding(10)
+                        .background(Color.white)
+                        .clipShape(Circle())
+                        .shadow(radius: 2)
+                    
+                    VStack(alignment: .leading) {
+                        Text("Office")
                             .font(.headline)
                             .foregroundColor(.black)
                         Text("Block-D")
-                    }
-                    
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                    }                    
                     Spacer()
                     Image("hero-img2")
                         .resizable()
-                        .frame(width: 50,height: 50)
-                        .font(.system(size: 25))
-                        .foregroundColor(.black)
+                        .scaledToFill()
+                        .frame(width: 40, height: 40)
+                        .clipShape(Circle())
+                        .shadow(radius: 2)
                 }
                 
                 .padding(.horizontal)

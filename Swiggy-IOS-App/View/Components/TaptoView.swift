@@ -37,13 +37,14 @@ struct TaptoView: View {
                                 Image("CRED-LOGO")
                                     .resizable()
                                     .frame(width: 100, height: 50)
-                                Text("Credit Card | .... 8822")
+                                Text("Credit Card | .... 8321")
                                     .font(.subheadline)
                                     .foregroundColor(.black)
                                 Spacer()
                                 Image(systemName: "creditcard.circle")
                                     .padding()
                             }
+                          
                             HStack{
                                 Image("hdcf")
                                     .resizable()

@@ -31,7 +31,7 @@ struct CartView: View {
                     .foregroundColor(.gray)
                 
                 
-                Exeser()
+                TaptoView()
             }
             VStack(alignment: .leading, spacing: 10) {
                 Text("Delivering superfast!")

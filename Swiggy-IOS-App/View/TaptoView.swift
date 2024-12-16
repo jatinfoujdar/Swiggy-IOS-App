@@ -1,13 +1,10 @@
 import SwiftUI
 
-struct Exeser: View {
+struct TaptoView: View {
     @State private var imageOffset: CGFloat = -30
     @State private var isImageMovedUp = false
 
     var body: some View {
-        Text("Tap to View Card")
-            .foregroundColor(.gray)
-        
         ZStack {
             Image("swiggy-card")
                 .resizable()
@@ -17,6 +14,7 @@ struct Exeser: View {
                 .offset(y: imageOffset)
             
             ZStack {
+                
                 Rectangle()
                     .fill(Color.white)
                     .frame(width: 355, height: 170)
@@ -24,6 +22,10 @@ struct Exeser: View {
                     .offset(y: -10)
                     .overlay(
                         VStack {
+                            Text("Tap to View Card")
+                                .foregroundColor(.gray)
+                            
+                            Divider()
                             HStack{
                                 Image("CRED-LOGO")
                                     .resizable()
@@ -63,5 +65,5 @@ struct Exeser: View {
 }
 
 #Preview {
-    Exeser()
+    TaptoView()
 }

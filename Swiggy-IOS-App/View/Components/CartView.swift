@@ -15,10 +15,24 @@ struct CartView: View {
                     CartItemView(item: $item, onUpdate: updateTotalAmount)
                         .padding(.horizontal)
                 }
+                
             }
-            
-            Exeser()
-            
+            VStack{
+                HStack{
+                    Text("Prefered Payment")
+                        .font(.subheadline)
+                        .fontWeight(.bold)
+                        .padding()
+                    Spacer()
+                }
+                Text("Tap to View Card")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.gray)
+                
+                
+                Exeser()
+            }
             VStack(alignment: .leading, spacing: 10) {
                 Text("Delivering superfast!")
                     .font(.headline)

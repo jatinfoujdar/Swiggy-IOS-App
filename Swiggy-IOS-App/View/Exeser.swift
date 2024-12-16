@@ -16,23 +16,39 @@ struct Exeser: View {
                 .clipped()
                 .offset(y: imageOffset)
             
-            HStack {
+            ZStack {
                 Rectangle()
                     .fill(Color.white)
-                    .frame(width: 350, height: 270)
+                    .frame(width: 355, height: 170)
                     .cornerRadius(10)
-                    .offset(y: 50)
+                    .offset(y: -10)
                     .overlay(
-                        HStack {
-                            Image("CRED-LOGO")
-                                .resizable()
-                                .frame(width: 100, height: 50)
-                            Text("Credit Card | .... 8822")
-                                .font(.subheadline)
-                                .foregroundColor(.black)
-                            Spacer()
+                        VStack {
+                            HStack{
+                                Image("CRED-LOGO")
+                                    .resizable()
+                                    .frame(width: 100, height: 50)
+                                Text("Credit Card | .... 8822")
+                                    .font(.subheadline)
+                                    .foregroundColor(.black)
+                                Spacer()
+                                Image(systemName: "creditcard.circle")
+                                    .padding()
+                            }
+                            HStack{
+                                Image("hdcf")
+                                    .resizable()
+                                    .frame(width: 70, height: 30)
+                                    .border(.black)
+                                
+                                Image("CRED-LOGO")
+                                    .resizable()
+                                    .frame(width: 70, height: 30)
+                                    .border(.black)
+                                
+                            }
                         }
-                            .padding(.bottom, 80)
+                            .padding(.bottom,40)
                     )
             }
         }
@@ -42,7 +58,7 @@ struct Exeser: View {
                 imageOffset = isImageMovedUp ? -180 : -30
             }
         }
-        
+        .shadow(radius: 0.8)
     }
 }
 

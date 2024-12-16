@@ -22,8 +22,15 @@ struct TaptoView: View {
                     .offset(y: -10)
                     .overlay(
                         VStack {
-                            Text("Tap to View Card")
-                                .foregroundColor(.gray)
+                            Button(action: {
+                                withAnimation(.easeInOut(duration: 0.5)) {
+                                    isImageMovedUp.toggle()
+                                    imageOffset = isImageMovedUp ? -180 : -30
+                                }
+                            }) {
+                                Text("Tap to View Card")
+                                    .foregroundColor(.gray)
+                            }
                             
                             Divider()
                             HStack{
@@ -41,23 +48,17 @@ struct TaptoView: View {
                                 Image("hdcf")
                                     .resizable()
                                     .frame(width: 70, height: 30)
-                                    .border(.black)
+                                    .border(.gray)
                                 
                                 Image("CRED-LOGO")
                                     .resizable()
                                     .frame(width: 70, height: 30)
-                                    .border(.black)
+                                    .border(.gray)
                                 
                             }
                         }
                             .padding(.bottom,40)
                     )
-            }
-        }
-        .onTapGesture {
-            withAnimation(.easeInOut(duration: 0.5)) {
-                isImageMovedUp.toggle()
-                imageOffset = isImageMovedUp ? -180 : -30
             }
         }
         .shadow(radius: 0.8)

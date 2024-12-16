@@ -1,55 +1,48 @@
 import SwiftUI
 
 struct Exeser: View {
-    @State private var imageOffset: CGFloat = -25
+    @State private var imageOffset: CGFloat = -30
     @State private var isImageMovedUp = false
 
     var body: some View {
+        Text("Tap to View Card")
+            .foregroundColor(.gray)
+        
         ZStack {
-
             Image("swiggy-card")
                 .resizable()
                 .scaledToFill()
                 .frame(width: 350, height: 210)
                 .clipped()
                 .offset(y: imageOffset)
-
-        
-            VStack {
+            
+            HStack {
                 Rectangle()
                     .fill(Color.white)
                     .frame(width: 350, height: 270)
                     .cornerRadius(10)
                     .offset(y: 50)
                     .overlay(
-                        VStack {
-                            Text("Delicious Food Awaits!")
-                                .font(.headline)
-                                .foregroundColor(.black)
-                                .padding(.top, 20)
-                            
-                            Text("Order now and enjoy amazing deals.")
+                        HStack {
+                            Image("CRED-LOGO")
+                                .resizable()
+                                .frame(width: 100, height: 50)
+                            Text("Credit Card | .... 8822")
                                 .font(.subheadline)
-                                .foregroundColor(.gray)
-                                .multilineTextAlignment(.center)
-                                .padding(.horizontal, 10)
+                                .foregroundColor(.black)
+                            Spacer()
                         }
-                            .padding(.top, 50) // Adjust this for better spacing
+                            .padding(.bottom, 80)
                     )
             }
         }
         .onTapGesture {
-            
             withAnimation(.easeInOut(duration: 0.5)) {
-                if isImageMovedUp {
-                    imageOffset = -25
-                } else {
-                    imageOffset = -180
-                }
                 isImageMovedUp.toggle()
+                imageOffset = isImageMovedUp ? -180 : -30
             }
         }
-        .border(.black)
+        
     }
 }
 

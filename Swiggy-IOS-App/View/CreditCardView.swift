@@ -1,57 +1,54 @@
 import SwiftUI
 
 struct CardView: View {
-    @State private var isImageEnlarged: Bool = false
+    @State private var isImageExpanded = false 
 
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 10)
-                .fill(Color.gray.opacity(0.3))
-                .shadow(color: Color.gray.opacity(0.2), radius: 5)
+        VStack(alignment: .leading) {
+            Text("Preferred Payment")
+                .font(.headline)
+                .padding(.leading)
 
-            VStack(alignment: .leading, spacing: 15) {
-                Text("Preferred Payment")
-                    .font(.headline)
-                    .padding(.top, 15)
-                    .padding(.horizontal, 20)
+            ZStack {
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(Color.white)
+                    .shadow(color: Color.gray.opacity(0.4), radius: 5)
+                
+                preferredPaymentView
+            }
+            .padding()
+            .frame(width: 400, height: isImageExpanded ? 250 : 150)
+            .animation(.easeInOut, value: isImageExpanded)
+        }
+    }
 
-                VStack(alignment: .leading, spacing: 5) {
-                    Text("Tap to View")
-                        .foregroundColor(.gray)
-                        .font(.caption)
-                        .onTapGesture {
-                            withAnimation {
-                                isImageEnlarged.toggle()
-                            }
-                        }
-
-                    HStack {
-                        Image("hdfccard")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: isImageEnlarged ? 200 : 20) 
-                            .animation(.easeInOut, value: isImageEnlarged)
+    private var preferredPaymentView: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            VStack {
+                Image("swiggy-card")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: isImageExpanded ? 180 : 50)
+                    .clipShape(
+                        RoundedRectangle(cornerRadius: 8, style: .continuous)
+                    )
+                    .onTapGesture {
+                        isImageExpanded.toggle()
                     }
-                    .padding(.horizontal)
+            }
+            .frame(maxWidth: .infinity)
 
-                    DottedLine()
-
-                    HStack {
-                        Image(systemName: "shield.lefthalf.fill")
-                        Text("Credit Card")
-                        Spacer()
-                        Text("...8822")
-                            .foregroundColor(.gray)
-                    }
-                    .padding(.horizontal)
-                }
-                .padding()
+            if !isImageExpanded {
+                Text("Credit Card | .... 8822")
+                    .font(.subheadline)
+                    .padding(.top, 5)
             }
         }
-        .frame(width: 300, height: 200)
+        .padding()
     }
 }
 
 #Preview {
     CardView()
 }
+

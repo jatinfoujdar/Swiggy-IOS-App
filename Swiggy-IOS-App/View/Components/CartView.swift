@@ -16,6 +16,9 @@ struct CartView: View {
                         .padding(.horizontal)
                 }
             }
+            
+            Exeser()
+            
             VStack(alignment: .leading, spacing: 10) {
                 Text("Delivering superfast!")
                     .font(.headline)

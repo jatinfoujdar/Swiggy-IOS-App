@@ -15,99 +15,102 @@ struct CartView: View {
                     CartItemView(item: $item, onUpdate: updateTotalAmount)
                         .padding(.horizontal)
                 }
-                
-            }
-            VStack{
-                HStack{
-                    Text("Prefered Payment")
+                VStack{
+                    HStack{
+                        Text("Prefered Payment")
+                            .font(.subheadline)
+                            .fontWeight(.bold)
+                            .padding()
+                        Spacer()
+                    }
+                    Text("Tap to View Card")
                         .font(.subheadline)
-                        .fontWeight(.bold)
-                        .padding()
-                    Spacer()
-                }
-                Text("Tap to View Card")
-                    .font(.subheadline)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.gray)
-                
-                
-                TaptoView()
-            }
-            VStack(alignment: .leading, spacing: 10) {
-                Text("Delivering superfast!")
-                    .font(.headline)
-                
-                DeliveryOptionView(
-                    title: "Standard",
-                    description: "Minimal order grouping",
-                    time: "20-25 mins",
-                    isSelected: selectedDeliveryOption == "Standard",
-                    action: { selectedDeliveryOption = "Standard" }
-                )
-
-                DeliveryOptionView(
-                    title: "Eco Saver",
-                    description: "Lesser CO2 by order grouping",
-                    time: "25-30 mins",
-                    isSelected: selectedDeliveryOption == "Eco Saver",
-                    action: { selectedDeliveryOption = "Eco Saver" }
-                )
-            }
-            .padding()
-
-            Divider()
-            Spacer()
-
-   
-            HStack {
-                Text("Reward Progress")
-                    .font(.subheadline)
-                    .bold()
-                Spacer()
-                Text("\(Int(totalAmount))/300")
-                    .font(.caption)
-            }
-            .padding(.horizontal)
-
-            ProgressBar(value: min(totalAmount / 300, 1))
-                .frame(height: 10)
-                .padding(.horizontal)
-
-            Spacer()
-
-           
-            VStack(spacing: 10) {
-                HStack {
-                    Text("To Pay")
-                        .font(.headline)
-                    Spacer()
-                    Text("\u{20B9}165  \u{20B9}140")
-                        .font(.subheadline)
-                        .strikethrough()
+                        .fontWeight(.semibold)
                         .foregroundColor(.gray)
-                    Text("\u{20B9}140")
-                        .font(.headline)
-                        .foregroundColor(.green)
-                }
-
-                HStack {
-                    Text("\u{20B9}25 saved on the total!")
-                        .font(.subheadline)
-                        .foregroundColor(.green)
-                    Spacer()
-                }
-
-                Button(action: {
-                 
-                }) {
-                    Text("Pay \u{20B9}278")
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.green)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
+                    
+                    
+                    TaptoView(cardImage: "swiggy-card")
+                    TaptoView(cardImage: "blackcard")
+                    
                 }
             }
+                
+              
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Delivering superfast!")
+                        .font(.headline)
+                    
+                    DeliveryOptionView(
+                        title: "Standard",
+                        description: "Minimal order grouping",
+                        time: "20-25 mins",
+                        isSelected: selectedDeliveryOption == "Standard",
+                        action: { selectedDeliveryOption = "Standard" }
+                    )
+                    
+                    DeliveryOptionView(
+                        title: "Eco Saver",
+                        description: "Lesser CO2 by order grouping",
+                        time: "25-30 mins",
+                        isSelected: selectedDeliveryOption == "Eco Saver",
+                        action: { selectedDeliveryOption = "Eco Saver" }
+                    )
+                }
+                .padding()
+                
+                Divider()
+                Spacer()
+                
+                
+                HStack {
+                    Text("Reward Progress")
+                        .font(.subheadline)
+                        .bold()
+                    Spacer()
+                    Text("\(Int(totalAmount))/300")
+                        .font(.caption)
+                }
+                .padding(.horizontal)
+                
+                ProgressBar(value: min(totalAmount / 300, 1))
+                    .frame(height: 10)
+                    .padding(.horizontal)
+                
+                Spacer()
+                
+                
+                VStack(spacing: 10) {
+                    HStack {
+                        Text("To Pay")
+                            .font(.headline)
+                        Spacer()
+                        Text("\u{20B9}165  \u{20B9}140")
+                            .font(.subheadline)
+                            .strikethrough()
+                            .foregroundColor(.gray)
+                        Text("\u{20B9}140")
+                            .font(.headline)
+                            .foregroundColor(.green)
+                    }
+                    
+                    HStack {
+                        Text("\u{20B9}25 saved on the total!")
+                            .font(.subheadline)
+                            .foregroundColor(.green)
+                        Spacer()
+                    }
+                    
+                    Button(action: {
+                        
+                    }) {
+                        Text("Pay \u{20B9}278")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.green)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+                }
             .padding()
             .background(Color(.systemGray6))
         }

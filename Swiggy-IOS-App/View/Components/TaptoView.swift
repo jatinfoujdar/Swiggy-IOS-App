@@ -3,10 +3,11 @@ import SwiftUI
 struct TaptoView: View {
     @State private var imageOffset: CGFloat = -30
     @State private var isImageMovedUp = false
+    var cardImage : String
 
     var body: some View {
         ZStack {
-            Image("swiggy-card")
+            Image(cardImage)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 350, height: 210)
@@ -67,5 +68,5 @@ struct TaptoView: View {
 }
 
 #Preview {
-    TaptoView()
+    TaptoView(cardImage: "swiggy-card")
 }

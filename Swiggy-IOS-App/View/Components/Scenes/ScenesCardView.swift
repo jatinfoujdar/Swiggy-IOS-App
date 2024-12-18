@@ -3,12 +3,9 @@ import SwiftUI
 struct ScenesCardView: View {
     var body: some View {
         VStack(alignment: .leading) {
-            // Top Category Label
-           
-
-            // Main Image
+          
             ZStack(alignment: .topLeading) {
-                Image("images") // Replace with your asset name
+                Image("images")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(height: 200)
@@ -24,7 +21,7 @@ struct ScenesCardView: View {
                     .background(Color.black.opacity(0.8))
                     .cornerRadius(8)
                     .padding([.leading, .top], 8)
-                // Heart Icon
+               
                 HStack {
                     Spacer()
                     VStack {
@@ -38,7 +35,7 @@ struct ScenesCardView: View {
                     }
                 }
             }
-            // Bottom Section
+         
             VStack(alignment: .leading, spacing: 4) {
                 Text("Justin Bieber Tour")
                     .font(.headline)
@@ -58,7 +55,7 @@ struct ScenesCardView: View {
             }
             .padding([.leading, .bottom, .trailing], 12)
         }
-        .background(Color(red: 255/255, green: 153/255, blue: 51/255)) // Orange background
+        .background(Color(red: 255/255, green: 153/255, blue: 51/255)) 
         .cornerRadius(16)
         .shadow(color: Color.gray.opacity(0.3), radius: 8, x: 0, y: 4)
         .padding()

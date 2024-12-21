@@ -1,10 +1,3 @@
-//
-//  CardWithInsetCorners.swift
-//  kks
-//
-//  Created by jatin foujdar on 18/12/24.
-//
-
 import SwiftUI
 
 struct CardWithInsetCorners: View {
@@ -15,30 +8,39 @@ struct CardWithInsetCorners: View {
     let gapToCornerItems: CGFloat = 4
 
     var body: some View {
-        Canvas { ctx, size in
-            if let label = ctx.resolveSymbol(id: "label") {
-
-                // Draw the label in the top-left corner
-                ctx.draw(label, in: CGRect(origin: .zero, size: label.size))
-
-                // Build a path with rounded corners
-                let path = pathWithRoundedCorners(canvasSize: size, labelSize: label.size)
-
-                // Use the path as clip shape for subsequent drawing operations
-                ctx.clip(to: path)
+        ZStack { // Use ZStack to layer elements on top of each other
+            // Add a background rectangle
+            Rectangle()
+                .fill(Color.white)  // You can change the color to whatever you want
+                .cornerRadius(roundedCornerRadius)  // Rounded corners for the background
+                .frame(width: 270, height: 270)  // You can set the size of the background rectangle here
+            VStack{
+                Canvas { ctx, size in
+                    if let label = ctx.resolveSymbol(id: "label") {
+                        // Draw the label in the top-left corner
+                        ctx.draw(label, in: CGRect(origin: .zero, size: label.size))
+                        
+                        // Build a path with rounded corners
+                        let path = pathWithRoundedCorners(canvasSize: size, labelSize: label.size)
+                        
+                        // Use the path as clip shape for subsequent drawing operations
+                        ctx.clip(to: path)
+                    }
+                    // Determine the rectangle for the image when scaled to fill
+                    let resolvedImage = ctx.resolve(image)
+                    let rect = rectForImage(canvasSize: size, imageSize: resolvedImage.size)
+                    
+                    // Show the image
+                    ctx.draw(resolvedImage, in: rect)
+                    
+                } symbols: {
+                    labelInCorner.tag("label")
+                }
+                .overlay(alignment: .bottomTrailing) {
+                    roundButton
+                }
             }
-            // Determine the rectangle for the image when scaled to fill
-            let resolvedImage = ctx.resolve(image)
-            let rect = rectForImage(canvasSize: size, imageSize: resolvedImage.size)
-
-            // Show the image
-            ctx.draw(resolvedImage, in: rect)
-
-        } symbols: {
-            labelInCorner.tag("label")
-        }
-        .overlay(alignment: .bottomTrailing) {
-            roundButton
+            .frame(width: 250, height: 250)
         }
     }
 
@@ -48,7 +50,6 @@ struct CardWithInsetCorners: View {
         let wButton = roundButtonDiameter + gapToCornerItems
         let hButton = roundButtonDiameter + gapToCornerItems
         return Path { path in
-
             // Begin half-way down the left side
             path.move(to: CGPoint(x: 0, y: canvasSize.height / 2))
 
@@ -147,7 +148,5 @@ struct CardWithInsetCorners: View {
 
 #Preview {
     CardWithInsetCorners(label: "Music", image: Image("images"))
-        .frame(width: 200,height: 200)
+        .frame(width: 200, height: 200)
 }
-
-

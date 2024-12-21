@@ -15,30 +15,50 @@ struct CardWithInsetCorners: View {
                 .cornerRadius(roundedCornerRadius)  // Rounded corners for the background
                 .frame(width: 270, height: 270)  // You can set the size of the background rectangle here
             VStack{
-                Canvas { ctx, size in
-                    if let label = ctx.resolveSymbol(id: "label") {
-                        // Draw the label in the top-left corner
-                        ctx.draw(label, in: CGRect(origin: .zero, size: label.size))
+                VStack{
+                    Canvas { ctx, size in
+                        if let label = ctx.resolveSymbol(id: "label") {
+                            // Draw the label in the top-left corner
+                            ctx.draw(label, in: CGRect(origin: .zero, size: label.size))
+                            
+                            // Build a path with rounded corners
+                            let path = pathWithRoundedCorners(canvasSize: size, labelSize: label.size)
+                            
+                            // Use the path as clip shape for subsequent drawing operations
+                            ctx.clip(to: path)
+                        }
+                        // Determine the rectangle for the image when scaled to fill
+                        let resolvedImage = ctx.resolve(image)
+                        let rect = rectForImage(canvasSize: size, imageSize: resolvedImage.size)
                         
-                        // Build a path with rounded corners
-                        let path = pathWithRoundedCorners(canvasSize: size, labelSize: label.size)
+                        // Show the image
+                        ctx.draw(resolvedImage, in: rect)
                         
-                        // Use the path as clip shape for subsequent drawing operations
-                        ctx.clip(to: path)
+                    } symbols: {
+                        labelInCorner.tag("label")
                     }
-                    // Determine the rectangle for the image when scaled to fill
-                    let resolvedImage = ctx.resolve(image)
-                    let rect = rectForImage(canvasSize: size, imageSize: resolvedImage.size)
-                    
-                    // Show the image
-                    ctx.draw(resolvedImage, in: rect)
-                    
-                } symbols: {
-                    labelInCorner.tag("label")
+                    .overlay(alignment: .bottomTrailing) {
+                        roundButton
+                    }
                 }
-                .overlay(alignment: .bottomTrailing) {
-                    roundButton
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("Drake OVO Tour")
+                        .font(.headline)
+                        .foregroundColor(.black)
+                    Text("World tour events")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                    HStack {
+                        Text("19 : 00")
+                            .font(.headline)
+                            .foregroundColor(.gray)
+                        Spacer()
+                        Text("Wed, Jul 12")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                    }
                 }
+               
             }
             .frame(width: 250, height: 250)
         }

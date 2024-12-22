@@ -11,9 +11,11 @@ struct CardWithInsetCorners: View {
         ZStack { // Use ZStack to layer elements on top of each other
             // Add a background rectangle
             Rectangle()
-                .fill(Color.black)  // You can change the color to whatever you want
+                .fill(LinearGradient(gradient: Gradient(colors: [Color.purple, Color.black]),
+                                     startPoint: .top, endPoint: .bottom))
                 .cornerRadius(roundedCornerRadius)  // Rounded corners for the background
-                .frame(width: 230, height: 280)  // You can set the size of the background rectangle here
+                .frame(width: 230, height: 280)  // Size of the background rectangle
+
             VStack{
                 VStack{
                     Canvas { ctx, size in
@@ -44,7 +46,7 @@ struct CardWithInsetCorners: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Drake OVO Tour")
                         .font(.headline)
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
                     Text("World tour events")
                         .font(.subheadline)
                         .foregroundColor(.gray)

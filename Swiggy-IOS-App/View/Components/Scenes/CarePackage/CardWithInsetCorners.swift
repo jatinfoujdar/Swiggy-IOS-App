@@ -11,9 +11,9 @@ struct CardWithInsetCorners: View {
         ZStack { // Use ZStack to layer elements on top of each other
             // Add a background rectangle
             Rectangle()
-                .fill(Color.white)  // You can change the color to whatever you want
+                .fill(Color.black)  // You can change the color to whatever you want
                 .cornerRadius(roundedCornerRadius)  // Rounded corners for the background
-                .frame(width: 270, height: 270)  // You can set the size of the background rectangle here
+                .frame(width: 230, height: 280)  // You can set the size of the background rectangle here
             VStack{
                 VStack{
                     Canvas { ctx, size in
@@ -60,7 +60,7 @@ struct CardWithInsetCorners: View {
                 }
                
             }
-            .frame(width: 250, height: 250)
+            .frame(width: 200, height: 250)
         }
     }
 
@@ -168,5 +168,4 @@ struct CardWithInsetCorners: View {
 
 #Preview {
     CardWithInsetCorners(label: "Music", image: Image("images"))
-        .frame(width: 200, height: 200)
 }

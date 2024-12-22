@@ -13,6 +13,9 @@ struct HeadersView: View {
                         .foregroundColor(.white)
                 }
                 Spacer()
+                Image(systemName: "paperplane")
+                    .foregroundColor(.white)
+                
                 Text("Bangalore, India")
                     .font(.subheadline)
                     .foregroundColor(.white)
@@ -63,6 +66,7 @@ struct HeadersView: View {
             
             
             HStack {
+               
                 TextField("Find interesting events", text: .constant(""))
                     .padding(.vertical, 10)
                     .padding(.horizontal, 16)

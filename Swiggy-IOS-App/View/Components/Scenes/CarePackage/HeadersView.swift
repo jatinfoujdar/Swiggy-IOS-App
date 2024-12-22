@@ -31,8 +31,9 @@ struct HeadersView: View {
             .padding(.horizontal)
             
             Text("Plan Your Best Event")
-                .font(.title2)
-                .fontWeight(.bold)
+//                .font(.title2)
+//                .fontWeight(.bold)
+                .font(.custom("American Typewriter", size: 30))
                 .foregroundColor(.white)
                 .padding(.horizontal)
             

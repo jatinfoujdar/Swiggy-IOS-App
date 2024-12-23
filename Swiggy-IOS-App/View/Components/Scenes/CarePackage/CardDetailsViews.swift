@@ -17,9 +17,10 @@ struct CardDetailsViews: View {
                 .frame(width: 380, height: 580)  // Size of the background rectangle
 
             VStack{
-                HStack {
+                VStack {
                     Text("Drake OVO Tour")
-                        .font(.headline)
+                        .font(.title2)
+                        .fontWeight(.bold)
                         .foregroundColor(.white)
                     Text("World tour events")
                         .font(.subheadline)
@@ -60,26 +61,10 @@ struct CardDetailsViews: View {
                         roundButton
                     }
                 }
-                VStack(alignment: .leading, spacing: 4) {
-                    Text("Drake OVO Tour")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                    Text("World tour events")
-                        .font(.subheadline)
-                        .foregroundColor(.gray)
-                    HStack {
-                        Text("19 : 00")
-                            .font(.headline)
-                            .foregroundColor(.gray)
-                        Spacer()
-                        Text("Wed, Jul 12")
-                            .font(.subheadline)
-                            .foregroundColor(.gray)
-                    }
-                }
-               
+                EventCardView()
             }
-            .frame(width: 350, height: 500)
+            
+            .frame(width: 360, height: 560)
         }
     }
 

@@ -8,15 +8,13 @@ struct CardDetailsViews: View {
     let gapToCornerItems: CGFloat = 4
 
     var body: some View {
-        ZStack { // Use ZStack to layer elements on top of each other
-            // Add a background rectangle
-            Rectangle()
-                .fill(LinearGradient(gradient: Gradient(colors: [Color.purple, Color.black]),
-                                     startPoint: .top, endPoint: .bottom))
-                .cornerRadius(roundedCornerRadius)  // Rounded corners for the background
-                .frame(width: 380, height: 580)  // Size of the background rectangle
+        ZStack {
+            // Full-screen gradient background
+            LinearGradient(gradient: Gradient(colors: [Color.black, Color.orange]),
+                           startPoint: .top, endPoint: .bottom)
+                .ignoresSafeArea(.all)
 
-            VStack{
+            VStack {
                 VStack {
                     Text("Drake OVO Tour")
                         .font(.title2)
@@ -35,25 +33,26 @@ struct CardDetailsViews: View {
                             .foregroundColor(.gray)
                     }
                 }
-                VStack{
+                .padding()
+
+                VStack {
                     Canvas { ctx, size in
                         if let label = ctx.resolveSymbol(id: "label") {
                             // Draw the label in the top-left corner
                             ctx.draw(label, in: CGRect(origin: .zero, size: label.size))
-                            
+
                             // Build a path with rounded corners
                             let path = pathWithRoundedCorners(canvasSize: size, labelSize: label.size)
-                            
-                            // Use the path as clip shape for subsequent drawing operations
+
+                            // Use the path as a clip shape for subsequent drawing operations
                             ctx.clip(to: path)
                         }
                         // Determine the rectangle for the image when scaled to fill
                         let resolvedImage = ctx.resolve(image)
                         let rect = rectForImage(canvasSize: size, imageSize: resolvedImage.size)
-                        
+
                         // Show the image
                         ctx.draw(resolvedImage, in: rect)
-                        
                     } symbols: {
                         labelInCorner.tag("label")
                     }
@@ -63,8 +62,11 @@ struct CardDetailsViews: View {
                 }
                 EventCardView()
             }
+            .frame(width: 380, height: 560)
+           
+            .cornerRadius(20) // Rounded corners for the whole card
+            .shadow(radius: 10) // Optional shadow for a lifted effect
             
-            .frame(width: 360, height: 560)
         }
     }
 
@@ -173,5 +175,3 @@ struct CardDetailsViews: View {
 #Preview {
     CardDetailsViews(label: "Music", image: Image("images"))
 }
-
-

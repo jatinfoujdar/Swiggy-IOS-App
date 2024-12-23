@@ -6,7 +6,7 @@ struct ScenesUIView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                LinearGradient(gradient: Gradient(colors: [Color.black, Color.purple]),
+                LinearGradient(gradient: Gradient(colors: [Color.black, Color.orange]),
                                startPoint: .top, endPoint: .bottom)
                     .ignoresSafeArea(.all)
 
@@ -23,10 +23,11 @@ struct ScenesUIView: View {
                             }
                         }
                         .padding()
+                        
                     }
 
                     Spacer()
-
+    
                     SceneNavbarView()
                 }
             }

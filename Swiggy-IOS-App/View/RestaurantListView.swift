@@ -10,7 +10,7 @@ struct RestaurantListView: View {
                       VStack {
                           HeaderView()
                     ScrollView {
-                    
+                        GridView()
                         if isLoading || isRefreshing {
                             ShimmerGridView()
                         } else {

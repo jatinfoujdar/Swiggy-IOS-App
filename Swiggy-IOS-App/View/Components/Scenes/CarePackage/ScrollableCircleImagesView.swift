@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ScrollableCircleImagesView: View {
-    let images = ["image1", "image2", "image3", "image4"]
+    let images = ["chrismas1", "ch2", "ch3", "ch4"]
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {

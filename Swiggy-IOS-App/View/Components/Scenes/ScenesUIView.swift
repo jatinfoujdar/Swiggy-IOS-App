@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ScenesUIView: View {
     let label = ["Music", "Hobbies", "Games", "Performing"]
-    let images = ["jb1", "jb2", "jb3", "jb1"] 
+    let images = ["jb1", "jb2", "jb3", "jb1"]
 
     var body: some View {
         NavigationStack {
@@ -31,6 +31,7 @@ struct ScenesUIView: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct CardWithInsetCorners: View {
+struct CardDetailsViews: View {
     let label: String
     let image: Image
     let roundButtonDiameter: CGFloat = 44
@@ -14,9 +14,26 @@ struct CardWithInsetCorners: View {
                 .fill(LinearGradient(gradient: Gradient(colors: [Color.purple, Color.black]),
                                      startPoint: .top, endPoint: .bottom))
                 .cornerRadius(roundedCornerRadius)  // Rounded corners for the background
-                .frame(width: 230, height: 280)  // Size of the background rectangle
+                .frame(width: 380, height: 580)  // Size of the background rectangle
 
             VStack{
+                HStack {
+                    Text("Drake OVO Tour")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                    Text("World tour events")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                    HStack {
+                        Text("19 : 00")
+                            .font(.headline)
+                            .foregroundColor(.gray)
+                        Spacer()
+                        Text("Wed, Jul 12")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                    }
+                }
                 VStack{
                     Canvas { ctx, size in
                         if let label = ctx.resolveSymbol(id: "label") {
@@ -62,9 +79,7 @@ struct CardWithInsetCorners: View {
                 }
                
             }
-            .frame(width: 200, height: 250)
-            
-            
+            .frame(width: 350, height: 500)
         }
     }
 
@@ -171,5 +186,7 @@ struct CardWithInsetCorners: View {
 }
 
 #Preview {
-    CardWithInsetCorners(label: "Music", image: Image("images"))
+    CardDetailsViews(label: "Music", image: Image("images"))
 }
+
+

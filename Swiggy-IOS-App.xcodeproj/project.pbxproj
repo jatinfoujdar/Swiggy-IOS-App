@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		596E1B242CFDB1BB00FB955D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 596E1B232CFDB1BB00FB955D /* Lottie */; };
+		598E63B02D215A70009858FD /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 598E63AF2D215A70009858FD /* video1.mp4 */; };
+		598E63B22D215B10009858FD /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 598E63B12D215B10009858FD /* video2.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		598E63AF2D215A70009858FD /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		598E63B12D215B10009858FD /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
 		59EEE83C2CF8CB7C000C798E /* Swiggy-IOS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swiggy-IOS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -37,6 +41,8 @@
 		59EEE8332CF8CB7C000C798E = {
 			isa = PBXGroup;
 			children = (
+				598E63AF2D215A70009858FD /* video1.mp4 */,
+				598E63B12D215B10009858FD /* video2.mp4 */,
 				59EEE83E2CF8CB7C000C798E /* Swiggy-IOS-App */,
 				59EEE83D2CF8CB7C000C798E /* Products */,
 			);
@@ -118,6 +124,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				598E63B02D215A70009858FD /* video1.mp4 in Resources */,
+				598E63B22D215B10009858FD /* video2.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

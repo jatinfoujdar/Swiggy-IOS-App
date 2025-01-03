@@ -10,6 +10,7 @@
 		596E1B242CFDB1BB00FB955D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 596E1B232CFDB1BB00FB955D /* Lottie */; };
 		598E63B02D215A70009858FD /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 598E63AF2D215A70009858FD /* video1.mp4 */; };
 		598E63B22D215B10009858FD /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 598E63B12D215B10009858FD /* video2.mp4 */; };
+		59B203A42D2806F500D05425 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 59B203A32D2806F500D05425 /* GoogleGenerativeAI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				596E1B242CFDB1BB00FB955D /* Lottie in Frameworks */,
+				59B203A42D2806F500D05425 /* GoogleGenerativeAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +79,7 @@
 			name = "Swiggy-IOS-App";
 			packageProductDependencies = (
 				596E1B232CFDB1BB00FB955D /* Lottie */,
+				59B203A32D2806F500D05425 /* GoogleGenerativeAI */,
 			);
 			productName = "Swiggy-IOS-App";
 			productReference = 59EEE83C2CF8CB7C000C798E /* Swiggy-IOS-App.app */;
@@ -108,6 +111,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				596E1B222CFDB1BB00FB955D /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				59B203A22D2806F500D05425 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 59EEE83D2CF8CB7C000C798E /* Products */;
@@ -351,6 +355,14 @@
 				minimumVersion = 4.5.0;
 			};
 		};
+		59B203A22D2806F500D05425 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google-gemini/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -358,6 +370,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 596E1B222CFDB1BB00FB955D /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		59B203A32D2806F500D05425 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 59B203A22D2806F500D05425 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
